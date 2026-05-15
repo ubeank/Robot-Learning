@@ -1,0 +1,301 @@
+﻿인덱스,발화,장소,난이도
+1,부엌으로 이동해,kitchen,direct
+2,간식 먹고 싶다.,kitchen,indirect
+3,조금 움직여볼까.,kitchen,ambiguous
+4,소파 있는 곳으로 가,living room,direct
+5,편한 분위기가 좋다,living room,indirect
+6,편한 데 가고 싶어,living room,ambiguous
+7,침실로 가줘,bedroom,direct
+8,이불 덮고 싶어.,bedroom,indirect
+9,좀 숨고 싶다,bedroom,ambiguous
+10,몸 움직일 곳으로 가줘,exercise,direct
+11,활동적으로 움직이고 싶다.,exercise,indirect
+12,리프레시하고 싶네,exercise,ambiguous
+13,주방 쪽으로 안내해,kitchen,direct
+14,커피 한잔 하고 싶다!,kitchen,indirect
+15,오늘 뭔가 만들어볼까.,kitchen,ambiguous
+16,소파 앞으로 가!,living room,direct
+17,드라마 보고 싶다.,living room,indirect
+18,아무것도 안 하고 싶다!,living room,ambiguous
+19,침대 있는 방으로 이동해,bedroom,direct
+20,눈이 감긴다,bedroom,indirect
+21,가만히 있고 싶다!,bedroom,ambiguous
+22,몸 움직일 곳으로 가줘!,exercise,direct
+23,몸 좀 움직이고 싶다,exercise,indirect
+24,가만히 있기 싫다,exercise,ambiguous
+25,부엌으로 이동해,kitchen,direct
+26,물 마시고 싶다,kitchen,indirect
+27,손 가는 걸 해보고 싶다,kitchen,ambiguous
+28,쉬는 공간으로 이동하자!,living room,direct
+29,휴식이 필요해.,living room,indirect
+30,가볍게 쉬고 싶다,living room,ambiguous
+31,침실 쪽으로 가자!,bedroom,direct
+32,이불 덮고 싶어.,bedroom,indirect
+33,혼자 있고 싶네,bedroom,ambiguous
+34,스트레칭할 공간으로 가고 싶어,exercise,direct
+35,체력이 떨어진 느낌이야.,exercise,indirect
+36,에너지가 부족한 느낌이야!,exercise,ambiguous
+37,주방 쪽으로 안내해,kitchen,direct
+38,간식 먹고 싶다,kitchen,indirect
+39,간단하게 해결할 게 없나,kitchen,ambiguous
+40,TV 있는 데로 이동해,living room,direct
+41,편하게 기대고 싶어.,living room,indirect
+42,한숨 돌리고 싶네,living room,ambiguous
+43,잠잘 곳으로 안내해,bedroom,direct
+44,잠깐 낮잠 자고 싶다.,bedroom,indirect
+45,가만히 있고 싶다,bedroom,ambiguous
+46,헬스하는 데로 가,exercise,direct
+47,체력이 떨어진 느낌이야,exercise,indirect
+48,조금 활동하고 싶네,exercise,ambiguous
+49,주방 쪽으로 안내해,kitchen,direct
+50,컵라면이라도 먹을까.,kitchen,indirect
+51,뭔가 찾고 싶네,kitchen,ambiguous
+52,TV 앞에 가고 싶어.,living room,direct
+53,드라마 보고 싶다.,living room,indirect
+54,아무것도 안 하고 싶다,living room,ambiguous
+55,자는 곳으로 가,bedroom,direct
+56,몸이 너무 피곤하다,bedroom,indirect
+57,잠잠한 곳이 좋네,bedroom,ambiguous
+58,몸 움직일 곳으로 가줘,exercise,direct
+59,체력이 떨어진 느낌이야.,exercise,indirect
+60,기분 전환이 필요해,exercise,ambiguous
+61,주방으로 데려다줘,kitchen,direct
+62,배가 좀 고프네,kitchen,indirect
+63,뭔가 하고 싶네,kitchen,ambiguous
+64,TV 있는 데로 이동해줘,living room,direct
+65,소파에 눕고 싶다,living room,indirect
+66,가볍게 쉬고 싶네,living room,ambiguous
+67,내 방으로 이동해,bedroom,direct
+68,침대 생각난다,bedroom,indirect
+69,생각 정리 좀 하고 싶네,bedroom,ambiguous
+70,운동하러 가자,exercise,direct
+71,운동해야 하는데,exercise,indirect
+72,리프레시하고 싶네!,exercise,ambiguous
+73,싱크대 있는 데로 가,kitchen,direct
+74,간식 먹고 싶네,kitchen,indirect
+75,뭔가 하고 싶네,kitchen,ambiguous
+76,거실로 가줘,living room,direct
+77,드라마 보고 싶다,living room,indirect
+78,조용히 있고 싶네,living room,ambiguous
+79,침대 있는 방으로 이동해줘,bedroom,direct
+80,몸이 너무 피곤하다,bedroom,indirect
+81,오늘은 쉬어야겠다,bedroom,ambiguous
+82,헬스하는 데로 가.,exercise,direct
+83,체력이 떨어진 느낌이야.,exercise,indirect
+84,리프레시하고 싶네,exercise,ambiguous
+85,주방으로 가줄래,kitchen,direct
+86,컵라면이라도 먹을까,kitchen,indirect
+87,오늘 뭔가 만들어볼까,kitchen,ambiguous
+88,거실로 안내해!,living room,direct
+89,편하게 기대고 싶어,living room,indirect
+90,아무것도 안 하고 싶다,living room,ambiguous
+91,침대 있는 방으로 이동해,bedroom,direct
+92,침대 생각난다,bedroom,indirect
+93,오늘은 쉬어야겠다.,bedroom,ambiguous
+94,운동하는 곳으로 가줘,exercise,direct
+95,가볍게 뛰고 싶네,exercise,indirect
+96,기분 전환이 필요해!,exercise,ambiguous
+97,냉장고 앞으로 가,kitchen,direct
+98,목이 좀 마른데.,kitchen,indirect
+99,오늘은 직접 해볼까,kitchen,ambiguous
+100,거실 쪽으로 가자,living room,direct
+101,드라마 보고 싶네,living room,indirect
+102,느긋하게 있고 싶어,living room,ambiguous
+103,자는 곳으로 가,bedroom,direct
+104,이불 덮고 싶어.,bedroom,indirect
+105,좀 숨고 싶다,bedroom,ambiguous
+106,운동방으로 안내해,exercise,direct
+107,운동 안 한 지 오래됐다,exercise,indirect
+108,몸이 무거운 느낌이다,exercise,ambiguous
+109,주방 쪽으로 안내해,kitchen,direct
+110,물 마시고 싶다,kitchen,indirect
+111,오늘 뭔가 만들어볼까.,kitchen,ambiguous
+112,소파 있는 곳으로 가,living room,direct
+113,잠깐 멍 때리고 싶네,living room,indirect
+114,오늘은 늘어지고 싶다.,living room,ambiguous
+115,잠잘 곳으로 안내해,bedroom,direct
+116,침대 생각난다.,bedroom,indirect
+117,오늘은 쉬어야겠다.,bedroom,ambiguous
+118,몸 움직일 곳으로 가줄래,exercise,direct
+119,가볍게 뛰고 싶네.,exercise,indirect
+120,가만히 있기 싫다,exercise,ambiguous
+121,주방 쪽으로 안내해,kitchen,direct
+122,물 마시고 싶다,kitchen,indirect
+123,가볍게 뭐라도 하고 싶다!,kitchen,ambiguous
+124,소파 앞으로 가,living room,direct
+125,오늘은 아무 생각 하기 싫다,living room,indirect
+126,오늘 너무 피곤하다,living room,ambiguous
+127,침대 있는 방으로 이동해,bedroom,direct
+128,눈이 감긴다,bedroom,indirect
+129,가만히 있고 싶다,bedroom,ambiguous
+130,헬스하는 데로 가.,exercise,direct
+131,너무 오래 앉아 있었네,exercise,indirect
+132,가만히 있기 싫다.,exercise,ambiguous
+133,요리하는 공간으로 가줘.,kitchen,direct
+134,간식 먹고 싶네,kitchen,indirect
+135,조금 움직여볼까,kitchen,ambiguous
+136,TV 앞에 가고 싶어,living room,direct
+137,좀 쉬고 싶네,living room,indirect
+138,오늘은 늘어지고 싶다,living room,ambiguous
+139,침대 있는 방으로 이동해.,bedroom,direct
+140,누워 있고 싶네,bedroom,indirect
+141,방해받기 싫다,bedroom,ambiguous
+142,헬스하는 데로 가,exercise,direct
+143,몸 좀 움직이고 싶다.,exercise,indirect
+144,움직여야 할 것 같아,exercise,ambiguous
+145,요리하는 공간으로 가줘!,kitchen,direct
+146,냉장고 확인하고 싶다!,kitchen,indirect
+147,가볍게 뭐라도 하고 싶다,kitchen,ambiguous
+148,거실로 데려다줘,living room,direct
+149,오늘은 아무 생각 하기 싫다.,living room,indirect
+150,아무것도 안 하고 싶다!,living room,ambiguous
+151,침실 쪽으로 가자,bedroom,direct
+152,오늘은 일찍 자야겠다,bedroom,indirect
+153,오늘은 쉬어야겠다,bedroom,ambiguous
+154,운동방으로 안내해,exercise,direct
+155,몸 좀 움직이고 싶다,exercise,indirect
+156,가만히 있기 싫다,exercise,ambiguous
+157,냉장고 앞으로 가.,kitchen,direct
+158,배가 좀 고프네,kitchen,indirect
+159,간단하게 해결할 게 없나.,kitchen,ambiguous
+160,소파 있는 곳으로 가,living room,direct
+161,좀 쉬고 싶네,living room,indirect
+162,아무것도 안 하고 싶네,living room,ambiguous
+163,침대 있는 방으로 이동해,bedroom,direct
+164,잠 좀 자고 싶네,bedroom,indirect
+165,잠잠한 곳이 좋네,bedroom,ambiguous
+166,몸 움직일 곳으로 가줘,exercise,direct
+167,몸이 찌뿌둥하다,exercise,indirect
+168,뭔가 역동적인 걸 하고 싶다,exercise,ambiguous
+169,냉장고 앞으로 가!,kitchen,direct
+170,간식 먹고 싶다.,kitchen,indirect
+171,기분 전환 좀 할까.,kitchen,ambiguous
+172,편하게 앉을 곳으로 가줘,living room,direct
+173,가만히 앉아 있고 싶다,living room,indirect
+174,기분 전환이 필요하다,living room,ambiguous
+175,침대 앞으로 가,bedroom,direct
+176,너무 졸리다,bedroom,indirect
+177,잠잠한 곳이 좋네,bedroom,ambiguous
+178,운동 공간으로 이동해,exercise,direct
+179,활동적으로 움직이고 싶다.,exercise,indirect
+180,리프레시하고 싶네!,exercise,ambiguous
+181,냉장고 있는 곳으로 가!,kitchen,direct
+182,물 마시고 싶다.,kitchen,indirect
+183,기분 전환 좀 할까!,kitchen,ambiguous
+184,TV 있는 데로 이동해,living room,direct
+185,편한 분위기가 좋다,living room,indirect
+186,기분 전환이 필요하다,living room,ambiguous
+187,자는 곳으로 가,bedroom,direct
+188,잠깐 낮잠 자고 싶다!,bedroom,indirect
+189,혼자 있고 싶네.,bedroom,ambiguous
+190,스트레칭할 공간으로 가고 싶어,exercise,direct
+191,운동해야 하는데,exercise,indirect
+192,리프레시하고 싶네.,exercise,ambiguous
+193,부엌에 가고 싶어!,kitchen,direct
+194,커피 한잔 하고 싶다.,kitchen,indirect
+195,기분 전환 좀 할까.,kitchen,ambiguous
+196,편하게 앉을 곳으로 가줄래,living room,direct
+197,오늘은 아무 생각 하기 싫다!,living room,indirect
+198,오늘 너무 피곤하다,living room,ambiguous
+199,내 방으로 이동해!,bedroom,direct
+200,너무 졸리다,bedroom,indirect
+201,가만히 있고 싶다.,bedroom,ambiguous
+202,스트레칭할 공간으로 가고 싶어.,exercise,direct
+203,가볍게 뛰고 싶네,exercise,indirect
+204,움직여야 할 것 같아,exercise,ambiguous
+205,주방으로 가줘,kitchen,direct
+206,물 마시고 싶다,kitchen,indirect
+207,뭔가 하고 싶네,kitchen,ambiguous
+208,거실로 가줘!,living room,direct
+209,휴식이 필요해,living room,indirect
+210,조용히 있고 싶네,living room,ambiguous
+211,방으로 가고 싶어,bedroom,direct
+212,몸이 너무 피곤하다!,bedroom,indirect
+213,오늘은 아무것도 하기 싫다!,bedroom,ambiguous
+214,헬스하는 데로 가,exercise,direct
+215,너무 오래 앉아 있었네,exercise,indirect
+216,답답해서 움직이고 싶다!,exercise,ambiguous
+217,냉장고 앞으로 가,kitchen,direct
+218,커피 한잔 하고 싶다,kitchen,indirect
+219,뭔가 하고 싶네.,kitchen,ambiguous
+220,TV 있는 데로 이동해.,living room,direct
+221,소파에 눕고 싶다,living room,indirect
+222,조용히 있고 싶네,living room,ambiguous
+223,침대 앞으로 가,bedroom,direct
+224,잠 좀 자고 싶네!,bedroom,indirect
+225,조용한 데 가고 싶다,bedroom,ambiguous
+226,운동 공간으로 이동해,exercise,direct
+227,몸 좀 움직이고 싶네,exercise,indirect
+228,몸이 무거운 느낌이다.,exercise,ambiguous
+229,주방으로 데려다줘!,kitchen,direct
+230,간식 먹고 싶다.,kitchen,indirect
+231,조금 움직여볼까,kitchen,ambiguous
+232,거실 쪽으로 가자,living room,direct
+233,잠깐 멍 때리고 싶네!,living room,indirect
+234,가볍게 쉬고 싶다!,living room,ambiguous
+235,침대 앞으로 가,bedroom,direct
+236,잠깐 낮잠 자고 싶네,bedroom,indirect
+237,오늘은 쉬어야겠다!,bedroom,ambiguous
+238,운동하러 가자,exercise,direct
+239,땀 좀 흘리고 싶다.,exercise,indirect
+240,뭔가 역동적인 걸 하고 싶다!,exercise,ambiguous
+241,주방으로 가줘,kitchen,direct
+242,커피 한잔 하고 싶네,kitchen,indirect
+243,기분 전환 좀 할까,kitchen,ambiguous
+244,거실로 안내해,living room,direct
+245,휴식이 필요해,living room,indirect
+246,가볍게 쉬고 싶네,living room,ambiguous
+247,조용한 방으로 가줘.,bedroom,direct
+248,몸이 너무 피곤하다,bedroom,indirect
+249,조용한 분위기가 좋다,bedroom,ambiguous
+250,트레이닝 공간으로 가,exercise,direct
+251,너무 오래 앉아 있었네!,exercise,indirect
+252,움직여야 할 것 같아,exercise,ambiguous
+253,싱크대 있는 데로 가,kitchen,direct
+254,컵라면이라도 먹을까,kitchen,indirect
+255,간단하게 해결할 게 없나,kitchen,ambiguous
+256,편하게 앉을 곳으로 가줄래,living room,direct
+257,드라마 보고 싶다,living room,indirect
+258,잠깐 머리 식히고 싶네!,living room,ambiguous
+259,내 방으로 이동해줘,bedroom,direct
+260,몸이 너무 피곤하다,bedroom,indirect
+261,조용한 데 가고 싶다.,bedroom,ambiguous
+262,운동할 수 있는 곳으로 가,exercise,direct
+263,몸이 찌뿌둥하다,exercise,indirect
+264,기분 전환이 필요해,exercise,ambiguous
+265,부엌 쪽으로 이동하자!,kitchen,direct
+266,목이 좀 마른데,kitchen,indirect
+267,오늘 뭔가 만들어볼까!,kitchen,ambiguous
+268,편하게 앉을 곳으로 가줘.,living room,direct
+269,소파에 눕고 싶다,living room,indirect
+270,편한 데 가고 싶어,living room,ambiguous
+271,침대 앞으로 가,bedroom,direct
+272,침대 생각난다,bedroom,indirect
+273,좀 숨고 싶다,bedroom,ambiguous
+274,운동 장소로 이동하자,exercise,direct
+275,스트레칭하고 싶다,exercise,indirect
+276,답답해서 움직이고 싶다!,exercise,ambiguous
+277,냉장고 앞으로 가,kitchen,direct
+278,커피 한잔 하고 싶다!,kitchen,indirect
+279,간단하게 해결할 게 없나.,kitchen,ambiguous
+280,편하게 앉을 곳으로 가줘.,living room,direct
+281,편하게 기대고 싶어.,living room,indirect
+282,오늘 너무 피곤하다,living room,ambiguous
+283,침실 쪽으로 가자,bedroom,direct
+284,오늘은 일찍 자야겠다,bedroom,indirect
+285,방해받기 싫다,bedroom,ambiguous
+286,몸 움직일 곳으로 가줘.,exercise,direct
+287,몸이 찌뿌둥하다,exercise,indirect
+288,움직여야 할 것 같아.,exercise,ambiguous
+289,냉장고 있는 곳으로 가,kitchen,direct
+290,배가 좀 고프네,kitchen,indirect
+291,가볍게 뭐라도 하고 싶다.,kitchen,ambiguous
+292,TV 있는 데로 이동해줘,living room,direct
+293,편한 분위기가 좋다,living room,indirect
+294,오늘 너무 피곤하다,living room,ambiguous
+295,침실 쪽으로 가자,bedroom,direct
+296,침대 생각난다.,bedroom,indirect
+297,방해받기 싫다,bedroom,ambiguous
+298,트레이닝 공간으로 가,exercise,direct
+299,운동 안 한 지 오래됐다!,exercise,indirect
+300,가만히 있기 싫다,exercise,ambiguous
