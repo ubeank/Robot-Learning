@@ -1,0 +1,601 @@
+﻿id,sentence,class,label
+1,기분 탓인지 메인 거실 공간으로 복귀할래.,living_room,direct
+2,왠지 모르게 리빙룸으로 구경 좀 하러 가자.,living_room,direct
+3,뜬금없이 커튼을 틀어놓고 쉴래.,living_room,indirect
+4,그냥 문득 인공지능 스피커를 틀어놓고 쉴래.,living_room,indirect
+5,하도 답답해서 패브릭 소파를 보면서 영화 한 편 볼까?,living_room,indirect
+6,주말이니까 거실 소파 쪽으로 데려다줘.,living_room,direct
+7,뜬금없이 거실 한가운데로 자리를 옮기자.,living_room,direct
+8,약간 벽걸이 장식이 있는 곳으로 나를 데려다줄래?,living_room,ambiguous
+9,그냥 문득 공용 거실로 지금 이동하자.,living_room,direct
+10,이제 슬슬 제일 시원한 장소로 방향으로 복귀할래.,living_room,ambiguous
+11,이번에는 넓은 거실로 방향을 틀어봐.,living_room,direct
+12,그냥 문득 아파트 거실로 향하는 중이야.,living_room,direct
+13,진짜로 공용 거실 공간으로 으로 가야겠어.,living_room,direct
+14,"음, 왠지 거실 스탠드 조명을 찾아서 음악 좀 틀어줘.",living_room,indirect
+15,다른 것보다 거실 창문을 틀어놓고 쉴래.,living_room,indirect
+16,퇴근하고 제일 시원한 장소로 둘러봐야겠어.,living_room,ambiguous
+17,혹시 거실 전면으로 지금 이동하자.,living_room,direct
+18,진짜로 리모컨을 바람 좀 쐬어야겠다.,living_room,indirect
+19,주말이니까 이야기꽃을 피우는 장소로 가고 싶네.,living_room,ambiguous
+20,아무래도 제일 넓은 방으로 이끌어 줄래.,living_room,ambiguous
+21,기분 전환 겸 TV 리모컨을 틀어놓고 쉴래.,living_room,indirect
+22,다른 것보다 바깥 풍경이 잘 보이는 자리로 둘러봐야겠어.,living_room,ambiguous
+23,오늘따라 거실 스탠드 조명을 작동 좀 시켜봐.,living_room,indirect
+24,혹시 리빙룸으로 데려다줘.,living_room,direct
+25,하도 답답해서 거실 안쪽으로 지금 이동하자.,living_room,direct
+26,오랜만에 시계 소리가 들리는 중앙으로 목적지를 설정해줘.,living_room,ambiguous
+27,솔직히 말해서 인공지능 스피커를 바람 좀 쐬어야겠다.,living_room,indirect
+28,"마침 잘됐다, 패브릭 소파를 켜줄래?",living_room,indirect
+29,피곤한데 남향 거실로 방향을 틀어봐.,living_room,direct
+30,"음, 왠지 TV 리모컨을 보면서 영화 한 편 볼까?",living_room,indirect
+31,하도 답답해서 대형 TV 덮고 누워있을래.,living_room,indirect
+32,"마침 잘됐다, 우리 거실로 데려다줘.",living_room,direct
+33,그냥 문득 거실 마루로 데려다줘.,living_room,direct
+34,약간 제일 시원한 장소로 목적지를 설정해줘.,living_room,ambiguous
+35,주말이니까 환한 거실로 걸어가고 싶어.,living_room,direct
+36,퇴근하고 에어컨을 전원을 꺼줘.,living_room,indirect
+37,"음, 왠지 대형 TV 찾아서 음악 좀 틀어줘.",living_room,indirect
+38,진짜로 거실 스탠드 조명을 조절하고 싶네.,living_room,indirect
+39,뜬금없이 거실 메인 공간으로 방향을 틀어봐.,living_room,direct
+40,심심한데 가장 넓은 평수의 공간으로 방향으로 복귀할래.,living_room,ambiguous
+41,아무래도 메인 화면이 있는 자리로 다 같이 이동하자.,living_room,ambiguous
+42,주말이니까 넓직한 거실로 향하는 중이야.,living_room,direct
+43,갑자기 햇살이 잘 드는 공간으로 둘러봐야겠어.,living_room,ambiguous
+44,퇴근하고 환한 거실로 방향을 틀어봐.,living_room,direct
+45,오늘따라 공기가 가장 쾌적한 구역으로 안내해 줘.,living_room,ambiguous
+46,이제 슬슬 대형 TV 채널 좀 돌려줘.,living_room,indirect
+47,유난히 오늘 패브릭 소파를 보면서 영화 한 편 볼까?,living_room,indirect
+48,피곤한데 카펫을 조절하고 싶네.,living_room,indirect
+49,오랜만에 거실 메인 공간으로 구경 좀 하러 가자.,living_room,direct
+50,퇴근하고 거실 베란다 앞으로 걸어가고 싶어.,living_room,direct
+51,다른 것보다 TV 리모컨을 작동 좀 시켜봐.,living_room,indirect
+52,가능하면 공기청정기를 보면서 멍하니 있고 싶어.,living_room,indirect
+53,생각해 보니까 리빙룸으로 안내해 줄래?,living_room,direct
+54,솔직히 말해서 잡지 스탠드를 새로 사고 싶어.,living_room,indirect
+55,지금 바로 거실 베란다 앞으로 복귀할래.,living_room,direct
+56,혹시 넓고 탁 트인 공간으로 머무르고 싶다.,living_room,ambiguous
+57,기분 전환 겸 안마의자를 좀 열어둘까?,living_room,indirect
+58,왠지 모르게 현관문 열면 바로 보이는 곳으로 둘러봐야겠어.,living_room,ambiguous
+59,이번에는 로봇 청소기를 깨끗이 닦아야겠어.,living_room,indirect
+60,아무래도 탁 트인 거실로 으로 가야겠어.,living_room,direct
+61,진짜로 로봇 청소기를 틀어놓고 쉴래.,living_room,indirect
+62,아무래도 거실 테이블을 보면서 영화 한 편 볼까?,living_room,indirect
+63,이번에는 쿠션을 조작해봐.,living_room,indirect
+64,기분 전환 겸 서큘레이터를 켜줄래?,living_room,indirect
+65,약간 환한 거실로 걸어가고 싶어.,living_room,direct
+66,일단은 거실 베란다 앞으로 데려다줘.,living_room,direct
+67,이번에는 소파가 놓여있을 법한 구역으로 이끌어 줄래.,living_room,ambiguous
+68,"마침 잘됐다, 스마트 TV 볼륨 좀 키워봐.",living_room,indirect
+69,거실 구석으로 쪽으로 가봐.,living_room,direct
+70,느닷없이 집에서 제일 아늑한 공간으로 둘러봐야겠어.,living_room,ambiguous
+71,이제 슬슬 다 같이 모여 앉는 장소로 가야 정답인 것 같아.,living_room,ambiguous
+72,하루 종일 인공지능 스피커를 바람 좀 쐬어야겠다.,living_room,indirect
+73,기분 탓인지 넷플릭스를 작동 좀 시켜봐.,living_room,indirect
+74,지금 바로 쿠션을 볼륨 좀 키워봐.,living_room,indirect
+75,하도 답답해서 중앙 거실로 지금 이동하자.,living_room,direct
+76,심심한데 블라인드를 조절하고 싶네.,living_room,indirect
+77,이제 슬슬 거실 창가 쪽으로 가고 싶어.,living_room,direct
+78,아무래도 안마의자를 위치를 바꿔줘.,living_room,indirect
+79,심심한데 벽걸이 장식이 있는 곳으로 가고 싶네.,living_room,ambiguous
+80,지금 바로 셋톱박스를 바람 좀 쐬어야겠다.,living_room,indirect
+81,피곤한데 리빙룸으로 가고 싶어.,living_room,direct
+82,뜬금없이 에어컨을 틀어놓고 쉴래.,living_room,indirect
+83,오늘따라 유튜브 영상을 청소해야겠네.,living_room,indirect
+84,갑자기 공기청정기를 덮고 누워있을래.,living_room,indirect
+85,원래대로라면 가장 넓은 평수의 공간으로 가야 정답인 것 같아.,living_room,ambiguous
+86,다른 것보다 메인 화면이 있는 자리로 목적지를 설정해줘.,living_room,ambiguous
+87,솔직히 말해서 제일 시원한 장소로 즉시 가고 싶어.,living_room,ambiguous
+88,슬슬 아파트 거실로 데려다줘.,living_room,direct
+89,"마침 잘됐다, 인터폰을 위치를 바꿔줘.",living_room,indirect
+90,기분 탓인지 우리 집 거실로 쪽으로 가봐.,living_room,direct
+91,퇴근하고 거실 테이블을 조절하고 싶네.,living_room,indirect
+92,심심한데 제일 넓은 방으로 안내해 줘.,living_room,ambiguous
+93,갑자기 화분을 전원을 꺼줘.,living_room,indirect
+94,약간 창문이 크게 난 곳으로 둘러봐야겠어.,living_room,ambiguous
+95,그냥 문득 제일 시원한 장소로 즉시 가고 싶어.,living_room,ambiguous
+96,혹시 공기청정기를 보면서 힐링해야겠어.,living_room,indirect
+97,약간 카펫을 깨끗이 닦아야겠어.,living_room,indirect
+98,심심한데 메인 리빙룸으로 향하는 중이야.,living_room,direct
+99,이제 슬슬 집안의 중심 공간으로 공간 이동하고 싶다.,living_room,ambiguous
+100,"마침 잘됐다, 다인용 의자가 있는 자리로 머무르고 싶다.",living_room,ambiguous
+101,갑자기 거실 창가 쪽으로 발걸음을 옮길래.,living_room,direct
+102,슬슬 거실 창가 쪽으로 구경 좀 하러 가자.,living_room,direct
+103,오랜만에 공용 거실로 으로 가야겠어.,living_room,direct
+104,느닷없이 거실 안쪽으로 가고 싶어.,living_room,direct
+105,"마침 잘됐다, 거실 구역으로 복귀할래.",living_room,direct
+106,혹시 큰 창문이 있는 넓은 방으로 발길이 가네.,living_room,ambiguous
+107,정신이 없어서 거실 전면으로 안내해 줄래?,living_room,direct
+108,느닷없이 가족들이 모이는 곳으로 가야 정답인 것 같아.,living_room,ambiguous
+109,원래대로라면 바깥 풍경이 잘 보이는 자리로 나를 데려다줄래?,living_room,ambiguous
+110,하도 답답해서 소파가 놓여있을 법한 구역으로 나를 데려다줄래?,living_room,ambiguous
+111,그냥 문득 넓고 탁 트인 공간으로 둘러봐야겠어.,living_room,ambiguous
+112,이제 슬슬 인터폰을 청소해야겠네.,living_room,indirect
+113,슬슬 공기가 가장 쾌적한 구역으로 즉시 가고 싶어.,living_room,ambiguous
+114,왠지 모르게 거실 마루로 으로 가야겠어.,living_room,direct
+115,하도 답답해서 거실 베란다 앞으로 방향으로 즉시 이동해.,living_room,direct
+116,왠지 모르게 공용으로 쓰는 넓은 방으로 다 같이 이동하자.,living_room,ambiguous
+117,유난히 오늘 거실장을 작동 좀 시켜봐.,living_room,indirect
+118,"마침 잘됐다, 리모컨을 덮고 누워있을래.",living_room,indirect
+119,피곤한데 공용 거실로 복귀할래.,living_room,direct
+120,"음, 왠지 가족 앨범을 작동 좀 시켜봐.",living_room,indirect
+121,이제 슬슬 창문이 크게 난 곳으로 이끌어 줄래.,living_room,ambiguous
+122,슬슬 거실 소파 쪽으로 구경 좀 하러 가자.,living_room,direct
+123,아무래도 이야기꽃을 피우는 장소로 방향으로 복귀할래.,living_room,ambiguous
+124,솔직히 말해서 중앙 거실로 걸어가고 싶어.,living_room,direct
+125,"음, 왠지 커튼을 보면서 힐링해야겠어.",living_room,indirect
+126,퇴근하고 바깥 하늘이 훤히 보이는 방으로 목적지를 설정해줘.,living_room,ambiguous
+127,혹시 거실 창가 쪽으로 방향을 틀어봐.,living_room,direct
+128,기분 탓인지 현관문 열면 바로 보이는 곳으로 목적지를 설정해줘.,living_room,ambiguous
+129,일단은 아파트 거실로 지금 이동하자.,living_room,direct
+130,"마침 잘됐다, 서큘레이터를 보면서 멍하니 있고 싶어.",living_room,indirect
+131,약간 스마트 TV 전원을 꺼줘.,living_room,indirect
+132,"마침 잘됐다, 제일 시원한 장소로 발걸음이 옮겨지네.",living_room,ambiguous
+133,약간 환한 거실로 방향으로 즉시 이동해.,living_room,direct
+134,일단은 창문이 크게 난 곳으로 발길이 가네.,living_room,ambiguous
+135,다 귀찮고 현관문 열면 바로 보이는 곳으로 공간 이동하고 싶다.,living_room,ambiguous
+136,슬슬 우리 거실로 발걸음을 옮길래.,living_room,direct
+137,기분 탓인지 거실장을 청소해야겠네.,living_room,indirect
+138,슬슬 식구들이 다 모여있는 방으로 가야 정답인 것 같아.,living_room,ambiguous
+139,하도 답답해서 리빙룸으로 방향을 틀어봐.,living_room,direct
+140,피곤한데 거실 바닥으로 복귀할래.,living_room,direct
+141,기분 탓인지 거실 테이블을 켜줄래?,living_room,indirect
+142,다른 것보다 대형 TV 깨끗이 닦아야겠어.,living_room,indirect
+143,그냥 문득 대형 TV 조절하고 싶네.,living_room,indirect
+144,오늘따라 거실 전면으로 방향을 틀어봐.,living_room,direct
+145,그냥 문득 벽걸이 시계를 조작해봐.,living_room,indirect
+146,퇴근하고 거실 창가 쪽으로 방향을 틀어봐.,living_room,direct
+147,"음, 왠지 거실 베란다 앞으로 쪽으로 가봐.",living_room,direct
+148,그냥 문득 큰 창문이 있는 넓은 방으로 즉시 가고 싶어.,living_room,ambiguous
+149,뜬금없이 거실 한가운데로 으로 가야겠어.,living_room,direct
+150,다른 것보다 창문이 크게 난 곳으로 다 같이 이동하자.,living_room,ambiguous
+151,왠지 모르게 쿠킹 존으로 쪽으로 안내를 부탁해.,kitchen,direct
+152,기분 전환 겸 주방 가전 구역으로 직진해줘.,kitchen,direct
+153,따뜻한 밥 냄새가 나는 장소로 이동해서 먹자.,kitchen,ambiguous
+154,오랜만에 부엌 조리대로 직진해줘.,kitchen,direct
+155,혹시 행주를 열어서 확인해볼래.,kitchen,indirect
+156,시원한 음료가 보관된 위치로 가자.,kitchen,ambiguous
+157,솔직히 말해서 시원한 음료가 보관된 위치로 목적지를 찍어줘.,kitchen,ambiguous
+158,원래대로라면 식탁을 작동시켜줘.,kitchen,indirect
+159,"마침 잘됐다, 컵과 접시가 가득한 방으로 방향으로 대기할게.",kitchen,ambiguous
+160,"음, 왠지 냉장고를 열어서 확인해볼래.",kitchen,indirect
+161,생각해 보니까 식기세척기를 열어서 확인해볼래.,kitchen,indirect
+162,왠지 모르게 그릇 소리가 나는 방으로 가야 살 것 같아.,kitchen,ambiguous
+163,하도 답답해서 물이 나오는 장소로 잠깐 들러야겠어.,kitchen,ambiguous
+164,하루 종일 식재료가 가득한 장소로 잠깐 들러야겠어.,kitchen,ambiguous
+165,느닷없이 식재료를 다듬는 구역으로 가자.,kitchen,ambiguous
+166,심심한데 설거지거리가 모여있는 곳으로 가야 살 것 같아.,kitchen,ambiguous
+167,오랜만에 메인 주방으로 나를 이끌어줘.,kitchen,direct
+168,기분 탓인지 와인 셀러를 위를 좀 닦아줄래?,kitchen,indirect
+169,갑자기 싱크대를 문을 열어봐야겠어.,kitchen,indirect
+170,생각해 보니까 음식 만드는 부엌으로 공간으로 갈래.,kitchen,direct
+171,아무래도 커피 포트를 전원을 연결해줘.,kitchen,indirect
+172,주말이니까 우리 집 부엌으로 가야 할 일이 있어.,kitchen,direct
+173,약간 냉장고를 이용해서 음식 좀 데워줘.,kitchen,indirect
+174,원래대로라면 냉장고를 이용해서 요리하자.,kitchen,indirect
+175,기분 전환 겸 식당 칸으로 가야 할 일이 있어.,kitchen,direct
+176,진짜로 아래층 주방으로 공간으로 갈래.,kitchen,direct
+177,슬슬 현대식 주방으로 바로 워프하고 싶어.,kitchen,direct
+178,아무래도 전자레인지를 깨끗이 빨아줘.,kitchen,indirect
+179,심심한데 주방 요리 구역으로 바로 워프하고 싶어.,kitchen,direct
+180,심심한데 아래층 주방으로 직진해줘.,kitchen,direct
+181,일단은 가스레인지를 전원을 연결해줘.,kitchen,indirect
+182,슬슬 주방 시설로 같이 가볼까?,kitchen,direct
+183,이번에는 얼음물 마실 수 있는 구역으로 방향으로 대기할게.,kitchen,ambiguous
+184,일단은 프라이팬을 열어서 확인해볼래.,kitchen,indirect
+185,진짜로 도마를 이용해서 요리하자.,kitchen,indirect
+186,정신이 없어서 조리 도구가 모여 있는 자리로 안내를 부탁해도 될까?,kitchen,ambiguous
+187,에어프라이어를 전원을 연결해줘.,kitchen,indirect
+188,주말이니까 숟가락과 젓가락이 있는 방으로 방향으로 대기할게.,kitchen,ambiguous
+189,일단은 현대식 주방으로 안내해 줄래?,kitchen,direct
+190,오랜만에 설거지거리가 모여있는 곳으로 잠깐 들러야겠어.,kitchen,ambiguous
+191,오랜만에 식기 건조대를 어디다 두었더라?,kitchen,indirect
+192,"마침 잘됐다, 음식 간을 보는 공간으로 잠깐 들러야겠어.",kitchen,ambiguous
+193,가능하면 아침 식사를 하는 자리로 들어가면 기분이 좋아져.,kitchen,ambiguous
+194,아무래도 식탁 의자를 위를 좀 닦아줄래?,kitchen,indirect
+195,주말이니까 부엌 안쪽으로 같이 가볼까?,kitchen,direct
+196,솔직히 말해서 음식 만드는 부엌으로 쪽으로 안내를 부탁해.,kitchen,direct
+197,일단은 식재료가 가득한 장소로 안내를 부탁해도 될까?,kitchen,ambiguous
+198,지금 바로 프라이팬을 깨끗이 빨아줘.,kitchen,indirect
+199,이번에는 야식이 숨겨진 공간으로 안내를 부탁해도 될까?,kitchen,ambiguous
+200,오늘따라 물 끓는 소리가 들리는 방으로 들어가면 기분이 좋아져.,kitchen,ambiguous
+201,혹시 음식 간을 보는 공간으로 방향으로 대기할게.,kitchen,ambiguous
+202,기분 전환 겸 요리하는 주방으로 이동하자.,kitchen,direct
+203,가능하면 주방 시설로 공간으로 갈래.,kitchen,direct
+204,이제 슬슬 아래층 주방으로 공간으로 갈래.,kitchen,direct
+205,피곤한데 요리할 수 있는 위치로 향해 걸어갈래.,kitchen,ambiguous
+206,오랜만에 식기세척기를 열어서 확인해볼래.,kitchen,indirect
+207,가능하면 부엌 조리대로 들어갈 생각이야.,kitchen,direct
+208,주말이니까 냄비를 가동해야겠다.,kitchen,indirect
+209,오늘따라 냉장고를 이용해서 음식 좀 데워줘.,kitchen,indirect
+210,이제 슬슬 식탁을 열어서 확인해볼래.,kitchen,indirect
+211,피곤한데 식재료가 가득한 장소로 가자.,kitchen,ambiguous
+212,뜬금없이 식재료가 가득한 장소로 가자.,kitchen,ambiguous
+213,가능하면 주방 공간으로 이동하자.,kitchen,direct
+214,기분 탓인지 설거지거리가 모여있는 곳으로 잠깐 들러야겠어.,kitchen,ambiguous
+215,느닷없이 프라이팬을 가동해야겠다.,kitchen,indirect
+216,"음, 왠지 행주를 정리정돈 해야겠어.",kitchen,indirect
+217,혹시 야식이 숨겨진 공간으로 방향으로 대기할게.,kitchen,ambiguous
+218,기분 탓인지 김치냉장고를 어디다 두었더라?,kitchen,indirect
+219,갑자기 주방 요리 구역으로 내부로 가자.,kitchen,direct
+220,오늘따라 시원한 음료가 보관된 위치로 이동해서 먹자.,kitchen,ambiguous
+221,생각해 보니까 주방 요리 구역으로 들어갈 생각이야.,kitchen,direct
+222,정신이 없어서 주방으로 직진해줘.,kitchen,direct
+223,기분 전환 겸 음식 냄새가 스며든 곳으로 데려다줘.,kitchen,ambiguous
+224,다 귀찮고 주방 시설로 나를 이끌어줘.,kitchen,direct
+225,주말이니까 요리방으로 바로 워프하고 싶어.,kitchen,direct
+226,"마침 잘됐다, 컵라면을 새로 사야겠어.",kitchen,indirect
+227,주말이니까 조리실로 내부로 가자.,kitchen,direct
+228,진짜로 요리할 수 있는 위치로 안내를 부탁해도 될까?,kitchen,ambiguous
+229,오랜만에 엄마가 요리하시는 장소로 안내를 부탁해도 될까?,kitchen,ambiguous
+230,솔직히 말해서 도마 소리가 울리는 공간으로 목적지를 찍어줘.,kitchen,ambiguous
+231,다 귀찮고 김치냉장고를 정리정돈 해야겠어.,kitchen,indirect
+232,그냥 문득 야식이 숨겨진 공간으로 향해 걸어갈래.,kitchen,ambiguous
+233,약간 식사 준비 공간으로 이동하자.,kitchen,direct
+234,생각해 보니까 주방 싱크대 앞으로 나를 이끌어줘.,kitchen,direct
+235,퇴근하고 식재료를 다듬는 구역으로 목적지를 찍어줘.,kitchen,ambiguous
+236,진짜로 주방 싱크대 앞으로 내부로 가자.,kitchen,direct
+237,뜬금없이 식재료가 가득한 장소로 잠깐 들러야겠어.,kitchen,ambiguous
+238,아무래도 머그컵을 이용해서 음식 좀 데워줘.,kitchen,indirect
+239,갑자기 프라이팬 열기가 남아있는 장소로 가자.,kitchen,ambiguous
+240,일단은 에어프라이어를 어디다 두었더라?,kitchen,indirect
+241,오랜만에 칼질 소리가 들리는 방으로 가자.,kitchen,ambiguous
+242,오늘따라 엄마가 요리하시는 장소로 향해 걸어갈래.,kitchen,ambiguous
+243,뜬금없이 탕비실로 발길을 돌릴래.,kitchen,direct
+244,이번에는 양념통을 깨끗이 빨아줘.,kitchen,indirect
+245,솔직히 말해서 머그컵을 작동시켜줘.,kitchen,indirect
+246,"음, 왠지 토스터기를 열어서 확인해볼래.",kitchen,indirect
+247,기분 전환 겸 가정용 주방으로 이동하자.,kitchen,direct
+248,하루 종일 가정용 주방으로 가고 싶어.,kitchen,direct
+249,갑자기 냉장고를 정리정돈 해야겠어.,kitchen,indirect
+250,식당 공간으로 나를 이끌어줘.,kitchen,direct
+251,그냥 문득 가정용 주방으로 들어갈 생각이야.,kitchen,direct
+252,유난히 오늘 따뜻한 밥 냄새가 나는 장소로 들어가면 기분이 좋아져.,kitchen,ambiguous
+253,피곤한데 식기들이 부딪히는 구역으로 가고 싶어지네.,kitchen,ambiguous
+254,지금 바로 요리할 수 있는 위치로 들어가면 기분이 좋아져.,kitchen,ambiguous
+255,피곤한데 식당 칸으로 들어갈 생각이야.,kitchen,direct
+256,기분 탓인지 주방 시설로 가고 싶어.,kitchen,direct
+257,지금 바로 가전제품이 몰려 있는 곳으로 가야 할 운명이야.,kitchen,ambiguous
+258,솔직히 말해서 부엌 쪽으로 내부로 가자.,kitchen,direct
+259,생각해 보니까 식탁 의자를 열어서 확인해볼래.,kitchen,indirect
+260,약간 부엌 조리대로 같이 가볼까?,kitchen,direct
+261,이번에는 현대식 주방으로 들어갈 생각이야.,kitchen,direct
+262,정신이 없어서 주방 세제를 문을 열어봐야겠어.,kitchen,indirect
+263,기분 전환 겸 음식물 쓰레기통이 있는 구역으로 데려다줘.,kitchen,ambiguous
+264,원래대로라면 요리방으로 가고 싶어.,kitchen,direct
+265,정신이 없어서 프라이팬을 문을 열어봐야겠어.,kitchen,indirect
+266,일단은 부엌 조리대로 같이 가볼까?,kitchen,direct
+267,솔직히 말해서 요리방 구역으로 내부로 가자.,kitchen,direct
+268,유난히 오늘 식재료를 다듬는 구역으로 데려다줘.,kitchen,ambiguous
+269,원래대로라면 프라이팬 열기가 남아있는 장소로 안내를 부탁해도 될까?,kitchen,ambiguous
+270,오늘따라 오븐을 작동시켜줘.,kitchen,indirect
+271,일단은 와인 셀러를 위를 좀 닦아줄래?,kitchen,indirect
+272,혹시 밥솥을 문을 열어봐야겠어.,kitchen,indirect
+273,슬슬 와인 셀러를 깨끗이 빨아줘.,kitchen,indirect
+274,유난히 오늘 정수기를 새로 사야겠어.,kitchen,indirect
+275,슬슬 김치냉장고를 작동시켜줘.,kitchen,indirect
+276,피곤한데 숟가락과 젓가락이 있는 방으로 방향으로 대기할게.,kitchen,ambiguous
+277,약간 식당 공간으로 직진해줘.,kitchen,direct
+278,진짜로 와인 셀러를 깨끗이 빨아줘.,kitchen,indirect
+279,지금 바로 식사할 만한 곳으로 목적지를 찍어줘.,kitchen,ambiguous
+280,일단은 식기세척기를 가동해야겠다.,kitchen,indirect
+281,피곤한데 조리 공간으로 공간으로 갈래.,kitchen,direct
+282,이번에는 우리 집 부엌으로 같이 가볼까?,kitchen,direct
+283,기분 탓인지 도마 소리가 울리는 공간으로 가야 할 운명이야.,kitchen,ambiguous
+284,심심한데 주방 싱크대 앞으로 공간으로 갈래.,kitchen,direct
+285,느닷없이 주방으로 안내해 줄래?,kitchen,direct
+286,왠지 모르게 음식 간을 보는 공간으로 데려다줘.,kitchen,ambiguous
+287,기분 탓인지 식기 건조대를 이용해서 음식 좀 데워줘.,kitchen,indirect
+288,"마침 잘됐다, 음식 냄새가 스며든 곳으로 들어가면 기분이 좋아져.",kitchen,ambiguous
+289,이제 슬슬 부엌 조리대로 같이 가볼까?,kitchen,direct
+290,심심한데 행주를 가동해야겠다.,kitchen,indirect
+291,"음, 왠지 주방으로 가야 할 일이 있어.",kitchen,direct
+292,기분 탓인지 주방 세제를 어디다 두었더라?,kitchen,indirect
+293,다 귀찮고 조리 도구가 모여 있는 자리로 잠깐 들러야겠어.,kitchen,ambiguous
+294,피곤한데 오븐을 작동시켜줘.,kitchen,indirect
+295,지금 바로 요리방 구역으로 직진해줘.,kitchen,direct
+296,느닷없이 요리할 수 있는 위치로 이동해서 먹자.,kitchen,ambiguous
+297,그냥 문득 수저통을 이용해서 음식 좀 데워줘.,kitchen,indirect
+298,"마침 잘됐다, 베이킹을 할 수 있는 자리로 이동해서 먹자.",kitchen,ambiguous
+299,유난히 오늘 가정용 주방으로 안내해 줄래?,kitchen,direct
+300,유난히 오늘 도마를 깨끗이 빨아줘.,kitchen,indirect
+301,오른쪽 침실로 발길을 돌리자.,bedroom,direct
+302,이번에는 안방 침실로 나를 데려다줄래?,bedroom,direct
+303,진짜로 온수매트를 안고 누워야겠어.,bedroom,indirect
+304,퇴근하고 내 침실로 발길을 돌리자.,bedroom,direct
+305,가능하면 내 방으로 가자.,bedroom,direct
+306,약간 침실 공간으로 나를 데려다줄래?,bedroom,direct
+307,오랜만에 깃털 베개를 쳐줄래?,bedroom,indirect
+308,정신이 없어서 잠옷을 머리맡에 놔둘래.,bedroom,indirect
+309,진짜로 협탁을 안고 누워야겠어.,bedroom,indirect
+310,피곤한데 수면 매트리스를 깨끗하게 닦아줘.,bedroom,indirect
+311,그냥 문득 침대 헤드를 안고 누워야겠어.,bedroom,indirect
+312,이불을 좀 켜고 자야겠다.,bedroom,indirect
+313,이제 슬슬 누워서 뒹굴거릴 만한 구역으로 들어가서 문 닫고 싶어.,bedroom,ambiguous
+314,느닷없이 불이 꺼진 어두운 방으로 피신해야겠어.,bedroom,ambiguous
+315,"마침 잘됐다, 수면 음악 스피커를 켜고 누워있고 싶어.",bedroom,indirect
+316,슬슬 잠자는 침실로 가서 누워야겠어.,bedroom,direct
+317,피곤한데 큰방 침실로 안내해 줘.,bedroom,direct
+318,피곤한데 세상에서 가장 아늑한 구석으로 즉시 이동하고 싶어져.,bedroom,ambiguous
+319,다른 것보다 이불을 좀 켜고 자야겠다.,bedroom,indirect
+320,정신이 없어서 작은방 침실로 안내해 줘.,bedroom,direct
+321,이번에는 잠자는 방으로 직행하자.,bedroom,direct
+322,지금 바로 스탠드 불빛을 갈아입어야겠어.,bedroom,indirect
+323,슬슬 부부 침실로 나를 데려다줄래?,bedroom,direct
+324,일단은 암막 커튼을 켜고 누워있고 싶어.,bedroom,indirect
+325,기분 탓인지 큰방 침실로 안내해 줘.,bedroom,direct
+326,퇴근하고 하루의 피로가 풀리는 방으로 가서 눈 좀 붙이자.,bedroom,ambiguous
+327,원래대로라면 아무도 방해하지 않는 위치로 나를 안내해 줘.,bedroom,ambiguous
+328,기분 전환 겸 침실 안방으로 이동할래.,bedroom,direct
+329,왠지 모르게 부부 침실로 발길을 돌리자.,bedroom,direct
+330,일단은 내 방으로 들어가고 싶어.,bedroom,direct
+331,유난히 오늘 침실 내부로 안내해 줘.,bedroom,direct
+332,약간 안방으로 자러 가야겠어.,bedroom,direct
+333,그냥 문득 누워서 뒹굴거릴 만한 구역으로 안내를 부탁한다.,bedroom,ambiguous
+334,약간 조용한 침실로 직행하자.,bedroom,direct
+335,하루의 피로가 풀리는 방으로 안내를 부탁한다.,bedroom,ambiguous
+336,하루 종일 큰방 침실로 방향으로 진입할래.,bedroom,direct
+337,이제 슬슬 아늑한 침실로 안내해 줘.,bedroom,direct
+338,이제 슬슬 전신거울을 쳐줄래?,bedroom,indirect
+339,느닷없이 단잠에 빠져들기 좋은 장소로 나를 안내해 줘.,bedroom,ambiguous
+340,약간 수면 전용 방으로 들어가서 자려고.,bedroom,direct
+341,원래대로라면 스탠드 불빛을 털어줘야겠다.,bedroom,indirect
+342,느닷없이 수면 매트리스를 머리맡에 놔둘래.,bedroom,indirect
+343,기분 탓인지 온수매트를 머리맡에 놔둘래.,bedroom,indirect
+344,솔직히 말해서 나만의 침실로 발길을 돌리자.,bedroom,direct
+345,솔직히 말해서 베드 트레이를 깨끗하게 닦아줘.,bedroom,indirect
+346,일단은 꿈나라로 갈 수 있는 장소로 가서 눈 좀 붙이자.,bedroom,ambiguous
+347,하도 답답해서 꿀잠 자는 방으로 발길을 돌리자.,bedroom,direct
+348,뜬금없이 온수매트를 쳐줄래?,bedroom,indirect
+349,"마침 잘됐다, 침실 구역으로 직행하자.",bedroom,direct
+350,가능하면 마스터룸으로 가자.,bedroom,direct
+351,진짜로 혼자만의 시간을 보낼 곳으로 안내를 부탁한다.,bedroom,ambiguous
+352,유난히 오늘 작은방 침실로 가자.,bedroom,direct
+353,원래대로라면 침실 안방으로 안내를 부탁해.,bedroom,direct
+354,이번에는 수면 매트리스를 정리해야겠다.,bedroom,indirect
+355,오랜만에 세상에서 가장 아늑한 구석으로 즉시 이동하고 싶어져.,bedroom,ambiguous
+356,약간 침대를 정리해야겠다.,bedroom,indirect
+357,생각해 보니까 이불을 입고 누워있어.,bedroom,indirect
+358,퇴근하고 부부 침실로 나를 데려다줄래?,bedroom,direct
+359,다른 것보다 침실 안방으로 직행하자.,bedroom,direct
+360,기분 전환 겸 이불 속으로 대피할 수 있는 방으로 피신해야겠어.,bedroom,ambiguous
+361,오늘따라 아늑한 침실로 발길을 돌리자.,bedroom,direct
+362,심심한데 세상에서 가장 아늑한 구석으로 가고 싶다.,bedroom,ambiguous
+363,기분 전환 겸 협탁을 쓰고 자야지.,bedroom,indirect
+364,피곤한데 수면등을 안고 누워야겠어.,bedroom,indirect
+365,이번에는 조용히 쉴 수 있는 곳으로 나를 데려다줄래?,bedroom,ambiguous
+366,생각해 보니까 암막 커튼을 좀 켜고 자야겠다.,bedroom,indirect
+367,일단은 베개를 깨끗하게 닦아줘.,bedroom,indirect
+368,혹시 수면 안대를 새로 세팅해줘.,bedroom,indirect
+369,이번에는 수면 음악 스피커를 입고 누워있어.,bedroom,indirect
+370,심심한데 안방 침실로 방향으로 진입할래.,bedroom,direct
+371,이번에는 침대를 새로 세팅해줘.,bedroom,indirect
+372,다른 것보다 누워서 뒹굴거릴 만한 구역으로 데려다주면 좋겠어.,bedroom,ambiguous
+373,기분 탓인지 이불 커버를 안고 누워야겠어.,bedroom,indirect
+374,그냥 문득 화장대를 털어줘야겠다.,bedroom,indirect
+375,"음, 왠지 안방 침실로 발길을 돌리자.",bedroom,direct
+376,혹시 수면 음악 스피커를 좀 켜고 자야겠다.,bedroom,indirect
+377,갑자기 수면 보조제를 새로 세팅해줘.,bedroom,indirect
+378,하루 종일 매트리스가 깔려있는 장소로 가야 진정한 휴식이야.,bedroom,ambiguous
+379,유난히 오늘 깊은 잠에 빠져들 공간으로 안내를 부탁한다.,bedroom,ambiguous
+380,하도 답답해서 조용히 쉴 수 있는 곳으로 가서 눈 좀 붙이자.,bedroom,ambiguous
+381,왠지 모르게 수면 안대를 켜고 누워있고 싶어.,bedroom,indirect
+382,하루 종일 침실 안방으로 안내해 줘.,bedroom,direct
+383,갑자기 침실 침대 쪽으로 가서 누워야겠어.,bedroom,direct
+384,뜬금없이 매트리스 패드를 깨끗하게 닦아줘.,bedroom,indirect
+385,주말이니까 나만의 침실로 들어가서 자려고.,bedroom,direct
+386,기분 탓인지 수면 보조제를 입고 누워있어.,bedroom,indirect
+387,침실 내부로 발길을 돌리자.,bedroom,direct
+388,이제 슬슬 휴식 침실로 이동할래.,bedroom,direct
+389,유난히 오늘 수면을 취하기에 적합한 공간으로 가야 진정한 휴식이야.,bedroom,ambiguous
+390,전신거울을 입고 누워있어.,bedroom,indirect
+391,진짜로 협탁을 새로 세팅해줘.,bedroom,indirect
+392,갑자기 하루의 피로가 풀리는 방으로 가서 눈 좀 붙이자.,bedroom,ambiguous
+393,기분 전환 겸 세상에서 가장 아늑한 구석으로 들어가서 문 닫고 싶어.,bedroom,ambiguous
+394,원래대로라면 마스터룸으로 자러 가야겠어.,bedroom,direct
+395,속세와 단절된 평화로운 공간으로 피신해야겠어.,bedroom,ambiguous
+396,퇴근하고 수면 안대를 깨끗하게 닦아줘.,bedroom,indirect
+397,이제 슬슬 수면 매트리스를 정리해야겠다.,bedroom,indirect
+398,갑자기 안방 침실로 발길을 돌리자.,bedroom,direct
+399,갑자기 꿀잠을 보장하는 안락한 위치로 즉시 이동하고 싶어져.,bedroom,ambiguous
+400,솔직히 말해서 잠자는 침실로 방향으로 진입할래.,bedroom,direct
+401,솔직히 말해서 누워서 뒹굴거릴 만한 구역으로 가고 싶다.,bedroom,ambiguous
+402,피곤한데 수면등을 정리해야겠다.,bedroom,indirect
+403,갑자기 스탠드 불빛만 켜진 방으로 나를 데려다줄래?,bedroom,ambiguous
+404,일단은 수면 모드가 작동되는 방으로 나를 안내해 줘.,bedroom,ambiguous
+405,심심한데 개인 침실로 직행하자.,bedroom,direct
+406,"음, 왠지 가습기를 정리해야겠다.",bedroom,indirect
+407,"마침 잘됐다, 이불 커버를 깨끗하게 닦아줘.",bedroom,indirect
+408,나만의 침실로 직행하자.,bedroom,direct
+409,일단은 수면 안대를 쳐줄래?,bedroom,indirect
+410,갑자기 꿀잠을 보장하는 안락한 위치로 안내를 부탁한다.,bedroom,ambiguous
+411,심심한데 스탠드 불빛을 입고 누워있어.,bedroom,indirect
+412,유난히 오늘 이불 속으로 대피할 수 있는 방으로 목적지 변경을 요청해.,bedroom,ambiguous
+413,오늘따라 가습기를 좀 켜고 자야겠다.,bedroom,indirect
+414,다른 것보다 아무도 방해하지 않는 위치로 가서 눈 좀 붙이자.,bedroom,ambiguous
+415,솔직히 말해서 베드 트레이를 쓰고 자야지.,bedroom,indirect
+416,다 귀찮고 잠자는 침실로 나를 데려다줄래?,bedroom,direct
+417,피곤한데 이불 커버를 입고 누워있어.,bedroom,indirect
+418,정신이 없어서 눈감고 명상할 수 있는 방으로 즉시 이동하고 싶어져.,bedroom,ambiguous
+419,기분 탓인지 세상에서 가장 아늑한 구석으로 목적지 변경을 요청해.,bedroom,ambiguous
+420,"마침 잘됐다, 침실 공간으로 이동할래.",bedroom,direct
+421,진짜로 협탁을 갈아입어야겠어.,bedroom,indirect
+422,솔직히 말해서 이불 속으로 대피할 수 있는 방으로 데려다주면 좋겠어.,bedroom,ambiguous
+423,정신이 없어서 나만의 침실로 방향으로 진입할래.,bedroom,direct
+424,그냥 문득 가습기를 입고 누워있어.,bedroom,indirect
+425,뜬금없이 깃털 베개를 쓰고 자야지.,bedroom,indirect
+426,퇴근하고 잠옷을 머리맡에 놔둘래.,bedroom,indirect
+427,오랜만에 깊은 잠에 빠져들 공간으로 나를 데려다줄래?,bedroom,ambiguous
+428,슬슬 깃털 베개를 입고 누워있어.,bedroom,indirect
+429,"음, 왠지 하루의 피로가 풀리는 방으로 가야 진정한 휴식이야.",bedroom,ambiguous
+430,"음, 왠지 단잠에 빠져들기 좋은 장소로 가서 눈 좀 붙이자.",bedroom,ambiguous
+431,피곤한데 눈 감고 쉴 만한 장소로 나를 안내해 줘.,bedroom,ambiguous
+432,혹시 수면 보조제를 털어줘야겠다.,bedroom,indirect
+433,지금 바로 수면 모드가 작동되는 방으로 안내를 부탁한다.,bedroom,ambiguous
+434,이번에는 암막 분위기가 조성된 방으로 가야 진정한 휴식이야.,bedroom,ambiguous
+435,다 귀찮고 부부 침실로 이동할래.,bedroom,direct
+436,슬슬 오른쪽 침실로 자러 가야겠어.,bedroom,direct
+437,오랜만에 바디 필로우를 켜고 누워있고 싶어.,bedroom,indirect
+438,슬슬 스탠드 불빛만 켜진 방으로 즉시 이동하고 싶어져.,bedroom,ambiguous
+439,하도 답답해서 베드 트레이를 쳐줄래?,bedroom,indirect
+440,"음, 왠지 조용한 침실로 이동할래.",bedroom,direct
+441,지금 바로 베드 트레이를 갈아입어야겠어.,bedroom,indirect
+442,생각해 보니까 알람 시계를 쳐줄래?,bedroom,indirect
+443,생각해 보니까 수면 보조제를 깨끗하게 닦아줘.,bedroom,indirect
+444,가능하면 깃털 베개를 머리맡에 놔둘래.,bedroom,indirect
+445,유난히 오늘 꿀잠 자는 방으로 가서 누워야겠어.,bedroom,direct
+446,주말이니까 나만의 침실로 직행하자.,bedroom,direct
+447,약간 침실 구역으로 가서 누워야겠어.,bedroom,direct
+448,피곤한데 바디 필로우를 정리해야겠다.,bedroom,indirect
+449,생각해 보니까 하루의 피로가 풀리는 방으로 데려다주면 좋겠어.,bedroom,ambiguous
+450,"마침 잘됐다, 침실 침대 쪽으로 자러 가야겠어.",bedroom,direct
+451,지금 바로 숨이 턱 끝까지 찰 만한 장소로 가야 다이어트 성공해.,exercise_room,ambiguous
+452,하도 답답해서 스쿼트 100개 할 수 있는 장소로 나를 즉시 이끌어줘.,exercise_room,ambiguous
+453,뜬금없이 러닝머신을 새로 배치해줘.,exercise_room,indirect
+454,뜬금없이 근손실을 방지할 수 있는 공간으로 데려다줘.,exercise_room,ambiguous
+455,혹시 땀 냄새가 건강하게 배어있는 방으로 발길을 옮겨볼까.,exercise_room,ambiguous
+456,하도 답답해서 근력 강화를 위한 특별한 방으로 방향으로 진입할래.,exercise_room,ambiguous
+457,그냥 문득 손목 보호대를 당기면서 운동하자.,exercise_room,indirect
+458,아무래도 운동 기구방으로 안내 부탁해.,exercise_room,direct
+459,갑자기 웨이트 트레이닝 방으로 즉시 이동해.,exercise_room,direct
+460,느닷없이 근력 운동방으로 가서 몸 좀 풀자.,exercise_room,direct
+461,생각해 보니까 근손실을 방지할 수 있는 공간으로 가서 제대로 해볼래.,exercise_room,ambiguous
+462,유난히 오늘 푸쉬업 바를 차고 뛰어볼까?,exercise_room,indirect
+463,솔직히 말해서 체력 관리 방으로 출근 도장 찍어야지.,exercise_room,direct
+464,주말이니까 건강해지는 느낌이 드는 방으로 가고 싶네.,exercise_room,ambiguous
+465,이번에는 땀 냄새가 건강하게 배어있는 방으로 가야 다이어트 성공해.,exercise_room,ambiguous
+466,슬슬 우리 집 헬스장으로 가서 땀 좀 흘려야겠어.,exercise_room,direct
+467,심심한데 사이클 기구를 차고 뛰어볼까?,exercise_room,indirect
+468,갑자기 운동 구역으로 가서 몸 좀 풀자.,exercise_room,direct
+469,기분 전환 겸 몸매 관리를 하는 전용 방으로 이동해서 땀 빼야지.,exercise_room,ambiguous
+470,퇴근하고 웨이트 트레이닝 방으로 발걸음을 옮기자.,exercise_room,direct
+471,하루 종일 근육을 자극할 수 있는 자리로 향해 출발해줘.,exercise_room,ambiguous
+472,"음, 왠지 거울이 사방에 붙은 방으로 가서 제대로 해볼래.",exercise_room,ambiguous
+473,지금 바로 벤치 프레스를 차고 뛰어볼까?,exercise_room,indirect
+474,주말이니까 근손실을 방지할 수 있는 공간으로 가서 제대로 해볼래.,exercise_room,ambiguous
+475,유난히 오늘 오운완을 달성할 수 있는 방으로 발길을 옮겨볼까.,exercise_room,ambiguous
+476,오늘따라 거울이 사방에 붙은 방으로 이동해서 땀 빼야지.,exercise_room,ambiguous
+477,유난히 오늘 몸을 움직일 만한 공간으로 이동해서 땀 빼야지.,exercise_room,ambiguous
+478,원래대로라면 우리 집 헬스장으로 안내해 줄래?,exercise_room,direct
+479,기분 전환 겸 무거운 철무더기가 있는 구역으로 목적지 변경해줘.,exercise_room,ambiguous
+480,슬슬 칼로리를 대량 소모할 장소로 가서 제대로 해볼래.,exercise_room,ambiguous
+481,다른 것보다 악력기를 양손에 들고 스쿼트하자.,exercise_room,indirect
+482,뜬금없이 턱걸이 봉을 들고 운동해야겠어.,exercise_room,indirect
+483,뜬금없이 짐볼을 당기면서 운동하자.,exercise_room,indirect
+484,"마침 잘됐다, 활력을 되찾을 수 있는 장소로 방향으로 진입할래.",exercise_room,ambiguous
+485,지금 바로 근육을 자극할 수 있는 자리로 공간 이동 시켜줘.,exercise_room,ambiguous
+486,가능하면 요가 매트를 어디다 두었더라?,exercise_room,indirect
+487,다른 것보다 푸쉬업 바를 깨끗하게 치워줄래.,exercise_room,indirect
+488,솔직히 말해서 땀 냄새가 건강하게 배어있는 방으로 가야 다이어트 성공해.,exercise_room,ambiguous
+489,느닷없이 홈짐으로 운동하러 갈 시간이야.,exercise_room,direct
+490,지금 바로 실내 자전거를 깔고 스트레칭해야지.,exercise_room,indirect
+491,느닷없이 덤벨을 조립해야겠어.,exercise_room,indirect
+492,다른 것보다 풀업 바를 양손에 들고 스쿼트하자.,exercise_room,indirect
+493,하도 답답해서 악력기를 조립해야겠어.,exercise_room,indirect
+494,뜬금없이 스쿼트 머신을 어디다 두었더라?,exercise_room,indirect
+495,가능하면 개인 홈짐으로 자리를 옮겨서 시작하자.,exercise_room,direct
+496,일단은 우리 집 헬스장으로 운동하러 갈 시간이야.,exercise_room,direct
+497,왠지 모르게 피트니스 룸으로 나를 데려가줘.,exercise_room,direct
+498,솔직히 말해서 라텍스 밴드를 어디다 두었더라?,exercise_room,indirect
+499,다 귀찮고 활력을 되찾을 수 있는 장소로 향해 출발해줘.,exercise_room,ambiguous
+500,느닷없이 체력단련 공간으로 방향으로 안내를 시작해.,exercise_room,direct
+501,뜬금없이 케틀벨을 조립해야겠어.,exercise_room,indirect
+502,혹시 운동 기구방으로 가서 땀 좀 흘려야겠어.,exercise_room,direct
+503,이번에는 오늘의 루틴을 소화할 장소로 발길을 옮겨볼까.,exercise_room,ambiguous
+504,유난히 오늘 근손실을 방지할 수 있는 공간으로 이동해서 땀 빼야지.,exercise_room,ambiguous
+505,하루 종일 푸쉬업 바를 당기면서 운동하자.,exercise_room,indirect
+506,퇴근하고 체력을 키울 수 있는 곳으로 가고 싶네.,exercise_room,ambiguous
+507,기분 전환 겸 심장이 터질 듯이 뛰는 방으로 향해 출발해줘.,exercise_room,ambiguous
+508,왠지 모르게 운동 구역으로 가서 몸 좀 풀자.,exercise_room,direct
+509,생각해 보니까 턱걸이 봉을 깨끗하게 치워줄래.,exercise_room,indirect
+510,"마침 잘됐다, 오늘의 루틴을 소화할 장소로 목적지 변경해줘.",exercise_room,ambiguous
+511,피곤한데 몸을 움직일 만한 공간으로 이동해서 땀 빼야지.,exercise_room,ambiguous
+512,지금 바로 체육방으로 자리를 옮겨서 시작하자.,exercise_room,direct
+513,주말이니까 오늘의 루틴을 소화할 장소로 방향으로 진입할래.,exercise_room,ambiguous
+514,혹시 활력을 되찾을 수 있는 장소로 방향으로 진입할래.,exercise_room,ambiguous
+515,정신이 없어서 요가 전용 방으로 안내 부탁해.,exercise_room,direct
+516,갑자기 악력기를 잡고 운동을 시작해볼까.,exercise_room,indirect
+517,왠지 모르게 운동용 거울을 들고 운동해야겠어.,exercise_room,indirect
+518,기분 탓인지 숨이 턱 끝까지 찰 만한 장소로 방향으로 진입할래.,exercise_room,ambiguous
+519,솔직히 말해서 근육 펌핑을 시켜줄 만한 방으로 가고 싶네.,exercise_room,ambiguous
+520,오늘따라 짐볼을 차고 뛰어볼까?,exercise_room,indirect
+521,심심한데 다이어트 의지가 불타는 공간으로 향해 출발해줘.,exercise_room,ambiguous
+522,주말이니까 덤벨을 당기면서 운동하자.,exercise_room,indirect
+523,피곤한데 스쿼트 머신을 조립해야겠어.,exercise_room,indirect
+524,다른 것보다 심박수를 올릴 만한 위치로 데려다줘.,exercise_room,ambiguous
+525,몸을 움직일 만한 공간으로 가야 다이어트 성공해.,exercise_room,ambiguous
+526,솔직히 말해서 개인 피트니스 룸으로 출근 도장 찍어야지.,exercise_room,direct
+527,생각해 보니까 오운완을 달성할 수 있는 방으로 공간 이동 시켜줘.,exercise_room,ambiguous
+528,하루 종일 근력 밴드를 조립해야겠어.,exercise_room,indirect
+529,혹시 찌푸둥한 몸을 일깨울 공간으로 가서 제대로 해볼래.,exercise_room,ambiguous
+530,솔직히 말해서 개인 홈짐으로 가서 몸 좀 풀자.,exercise_room,direct
+531,오늘따라 오늘의 루틴을 소화할 장소로 목적지 변경해줘.,exercise_room,ambiguous
+532,그냥 문득 피트니스 공간으로 나를 데려가줘.,exercise_room,direct
+533,"음, 왠지 나만의 헬스장으로 운동하러 갈 시간이야.",exercise_room,direct
+534,생각해 보니까 몸을 움직일 만한 공간으로 가서 제대로 해볼래.,exercise_room,ambiguous
+535,이번에는 운동방 공간으로 안내 부탁해.,exercise_room,direct
+536,혹시 미니 헬스장으로 가서 몸 좀 풀자.,exercise_room,direct
+537,지금 바로 오늘의 루틴을 소화할 장소로 목적지 변경해줘.,exercise_room,ambiguous
+538,다 귀찮고 체육방으로 가서 땀 좀 흘려야겠어.,exercise_room,direct
+539,왠지 모르게 오운완을 달성할 수 있는 방으로 목적지 변경해줘.,exercise_room,ambiguous
+540,진짜로 아령을 당기면서 운동하자.,exercise_room,indirect
+541,슬슬 개인 홈짐으로 가서 땀 좀 흘려야겠어.,exercise_room,direct
+542,다 귀찮고 폼롤러를 양손에 들고 스쿼트하자.,exercise_room,indirect
+543,갑자기 칼로리를 대량 소모할 장소로 이동해서 땀 빼야지.,exercise_room,ambiguous
+544,악력기를 어디다 두었더라?,exercise_room,indirect
+545,벤치 프레스를 양손에 들고 스쿼트하자.,exercise_room,indirect
+546,일단은 심박수를 올릴 만한 위치로 방향으로 진입할래.,exercise_room,ambiguous
+547,아무래도 스트레칭 밴드를 잡고 운동을 시작해볼까.,exercise_room,indirect
+548,혹시 폼롤러를 깨끗하게 치워줄래.,exercise_room,indirect
+549,솔직히 말해서 짐볼을 새로 배치해줘.,exercise_room,indirect
+550,퇴근하고 체력을 키울 수 있는 곳으로 공간 이동 시켜줘.,exercise_room,ambiguous
+551,원래대로라면 스텝퍼를 들고 운동해야겠어.,exercise_room,indirect
+552,하루 종일 홈트레이닝 룸으로 운동하러 갈 시간이야.,exercise_room,direct
+553,유난히 오늘 철봉이 설치된 공간으로 발길을 옮겨볼까.,exercise_room,ambiguous
+554,왠지 모르게 웨이트 트레이닝 방으로 안내 부탁해.,exercise_room,direct
+555,피곤한데 홈트레이닝 룸으로 운동하러 갈 시간이야.,exercise_room,direct
+556,솔직히 말해서 요가 매트를 깔고 스트레칭해야지.,exercise_room,indirect
+557,기분 전환 겸 케틀벨을 새로 배치해줘.,exercise_room,indirect
+558,유난히 오늘 체력 관리 방으로 즉시 이동해.,exercise_room,direct
+559,이번에는 미니 헬스장으로 즉시 이동해.,exercise_room,direct
+560,가능하면 헬스 전용 방으로 가서 땀 좀 흘려야겠어.,exercise_room,direct
+561,혹시 라텍스 밴드를 새로 배치해줘.,exercise_room,indirect
+562,왠지 모르게 손목 보호대를 어디다 두었더라?,exercise_room,indirect
+563,퇴근하고 우리 집 헬스장으로 방향으로 안내를 시작해.,exercise_room,direct
+564,솔직히 말해서 헬스 룸으로 운동하러 갈 시간이야.,exercise_room,direct
+565,지금 바로 악력기를 잡고 운동을 시작해볼까.,exercise_room,indirect
+566,오늘따라 체육방으로 이동하자.,exercise_room,direct
+567,유난히 오늘 심장이 터질 듯이 뛰는 방으로 이동해서 땀 빼야지.,exercise_room,ambiguous
+568,느닷없이 개인 홈짐으로 방향으로 안내를 시작해.,exercise_room,direct
+569,유난히 오늘 라텍스 밴드를 조립해야겠어.,exercise_room,indirect
+570,슬슬 몸을 움직일 만한 공간으로 나를 즉시 이끌어줘.,exercise_room,ambiguous
+571,일단은 치닝디핑을 양손에 들고 스쿼트하자.,exercise_room,indirect
+572,정신이 없어서 몸을 움직일 만한 공간으로 가서 제대로 해볼래.,exercise_room,ambiguous
+573,지금 바로 홈트레이닝 전용 공간으로 자리를 옮겨서 시작하자.,exercise_room,direct
+574,진짜로 홈트레이닝 룸으로 즉시 이동해.,exercise_room,direct
+575,솔직히 말해서 운동 구역으로 즉시 이동해.,exercise_room,direct
+576,기분 탓인지 턱걸이 봉을 조립해야겠어.,exercise_room,indirect
+577,"음, 왠지 운동하는 방으로 가서 몸 좀 풀자.",exercise_room,direct
+578,피곤한데 스트레칭 룸으로 안내해 줄래?,exercise_room,direct
+579,피곤한데 사이클 기구를 깔고 스트레칭해야지.,exercise_room,indirect
+580,혹시 개운하게 움직일 장소로 나를 즉시 이끌어줘.,exercise_room,ambiguous
+581,기분 탓인지 찌푸둥한 몸을 일깨울 공간으로 향해 출발해줘.,exercise_room,ambiguous
+582,유난히 오늘 치닝디핑을 양손에 들고 스쿼트하자.,exercise_room,indirect
+583,유난히 오늘 운동방 공간으로 안내 부탁해.,exercise_room,direct
+584,진짜로 바벨을 당기면서 운동하자.,exercise_room,indirect
+585,오늘따라 스트레칭 룸으로 안내 부탁해.,exercise_room,direct
+586,생각해 보니까 폼롤러를 새로 배치해줘.,exercise_room,indirect
+587,하도 답답해서 운동 기구방으로 운동하러 갈 시간이야.,exercise_room,direct
+588,"마침 잘됐다, 운동방으로 나를 데려가줘.",exercise_room,direct
+589,그냥 문득 손목 보호대를 이용해서 중심 잡아볼래.,exercise_room,indirect
+590,퇴근하고 땀 냄새가 건강하게 배어있는 방으로 목적지 변경해줘.,exercise_room,ambiguous
+591,오늘따라 건강해지는 느낌이 드는 방으로 나를 즉시 이끌어줘.,exercise_room,ambiguous
+592,그냥 문득 실내 운동방으로 출근 도장 찍어야지.,exercise_room,direct
+593,오늘따라 찌푸둥한 몸을 일깨울 공간으로 가고 싶네.,exercise_room,ambiguous
+594,가능하면 바벨을 당기면서 운동하자.,exercise_room,indirect
+595,유난히 오늘 체력 관리 방으로 방향으로 안내를 시작해.,exercise_room,direct
+596,이번에는 매트가 두껍게 깔린 구역으로 가고 싶네.,exercise_room,ambiguous
+597,하루 종일 거울이 사방에 붙은 방으로 공간 이동 시켜줘.,exercise_room,ambiguous
+598,정신이 없어서 홈트레이닝 룸으로 자리를 옮겨서 시작하자.,exercise_room,direct
+599,기분 전환 겸 몸을 움직일 만한 공간으로 목적지 변경해줘.,exercise_room,ambiguous
+600,이제 슬슬 근력 강화를 위한 특별한 방으로 공간 이동 시켜줘.,exercise_room,ambiguous
