@@ -1,245 +1,193 @@
-# python3 /mnt/ssd/hj/Robot-Learning/text_data/make_text_data.py
-
 import csv
 import random
 
 # ==========================================
-# 1. 접두사 및 접미사 사전 (공백 포함 총 35개 / 32개)
+# 1. 자연스러운 영문 변형을 위한 접두사/접미사 사전 (각 25개 이상)
 # ==========================================
 prefixes = [
-    "", "갑자기 ", "오늘따라 ", "지금 바로 ", "음, 왠지 ", "생각해 보니까 ", "이제 슬슬 ", "약간 ", 
-    "슬슬 ", "기분 탓인지 ", "하도 답답해서 ", "하루 종일 ", "느닷없이 ", "기분 전환 겸 ", "마침 잘됐다, ", 
-    "아무래도 ", "유난히 오늘 ", "뜬금없이 ", "일단은 ", "다른 것보다 ", "진짜로 ", "솔직히 말해서 ", 
-    "왠지 모르게 ", "그냥 문득 ", "혹시 ", "가능하면 ", "다 귀찮고 ", "피곤한데 ", "심심한데 ", 
-    "오랜만에 ", "이번에는 ", "원래대로라면 ", "주말이니까 ", "퇴근하고 ", "정신이 없어서 "
+    "", "Suddenly, ", "Honestly, ", "Right now, ", "If possible, ", "I think ", "As planned, ", 
+    "Well, ", "Unbelievably, ", "For some reason, ", "Since I'm tired, ", "Since I'm bored, ", 
+    "After a long day, ", "First of all, ", "Without a doubt, ", "I guess ", "Look, ", "Hey, ", 
+    "Maybe ", "If you don't mind, ", "Actually, ", "By the way, ", "Lately, ", "Surprisingly, ",
+    "Just so you know, ", "Basically, ", "Tonight, ", "This weekend, "
 ]
 
 suffixes = [
-    "", " 싶네.", " 같아.", " 생각이야.", " 좋겠어.", " 중이야.", " 든다.", " 마련이지.", " 가야겠어.",
-    " 참이야.", " 중이거든.", " 예정이야.", " 죽겠네.", " 마련이야.", " 보네.", " 나봐.", " 셈이야.",
-    " 무렵이네.", " 타이밍이야.", " 직전이야.", " 편이야.", " 맘이네.", " 행동이야.", " 상태야.",
-    " 상황이네.", " 모양이야.", " 텐데.", " 지경이야.", " 마음이 굴뚝같아.", " 기분이야.", " 계획이야.", " 거 같아."
+    "", " right away.", " immediately.", " if you can.", " for a moment.", " because I feel like it.", 
+    " to clear my head.", " as soon as possible.", " without waiting.", " before it gets too late.", 
+    " to spend some time.", " for a change.", " since I have nothing else to do.", " to feel better.", 
+    " because that's what I need.", " for real.", " like, right now.", " before going out."
 ]
 
 # ==========================================
-# 2. [수정] 클래스별 핵심 키워드 및 패턴 (조사 식별 키 추가)
+# 2. 오브젝트 리스트 기반 클래스별 핵심 템플릿
 # ==========================================
 templates = {
     'living_room': {
         'direct': {
             'keywords': [
-                '거실', '우리 집 거실', '메인 거실 공간', '넓은 거실', '가족 거실', '공용 거실', '거실 쪽', '중앙 거실',
-                '아파트 거실', '거실 구석', '거실 한가운데', '거실 베란다 앞', '넓은 거실 공간', '탁 트인 거실', '우리 거실',
-                '공용 거실 공간', '환한 거실', '거실 안쪽', '거실 전면', '거실 창가 쪽', '거실 메인 공간', '넓직한 거실',
-                '거실 소파 쪽', '거실 바닥', '거실 마루', '거실 카펫 위', '남향 거실', '리빙룸', '메인 리빙룸', '거실 구역'
+                'the living room', 'our main living room', 'the spacious living room area', 'the living room zone',
+                'the family living room', 'the central living room', 'the cozy living room'
             ],
-            'josa_type': '로', # '로/으로' 결합 유도
             'patterns': [
-                '지금 이동하자.', '안내해 줄래?', '가고 싶어.', '자리를 옮기자.', '구경 좀 하러 가자.', 
-                '데려다줘.', '방향을 틀어봐.', '향하는 중이야.', '안내를 시작해.', '으로 가야겠어.', # '으로' 고정 패턴은 분리
-                '방향으로 즉시 이동해.', '걸어가고 싶어.', '발걸음을 옮길래.', '쪽으로 가봐.', '복귀할래.'
+                'I want to go to [KW]', 'Could you guide me to [KW]?', 'Let\'s head over to [KW]', 
+                'I need to step into [KW]', 'Show me the way to [KW]', 'Can you take me to [KW]?', 
+                'I am heading towards [KW]', 'I think I will stay in [KW]', 'Let\'s move to [KW]',
+                'Is it okay to go to [KW]?', 'I\'m just going to walk into [KW]', 'Let\'s gather in [KW]'
             ]
         },
         'indirect': {
+            # 제공해주신 오브젝트 반영: 소파, 안락의자, TV, 스피커, 러그, 카펫, 액자, 벽난로, 샹들리에, 테이블 등
             'keywords': [
-                '소파', '스마트 TV', '거실장', '리모컨', '공기청정기', '대형 TV', '넷플릭스', '유튜브 영상', '패브릭 소파', 
-                '안마의자', '거실 테이블', '가족 앨범', '벽걸이 시계', '화분', '셋톱박스', '가죽 소파', 'TV 리모컨',
-                '블루투스 스피커', '거실 스탠드 조명', '에어컨', '서큘레이터', '로봇 청소기', '쿠션', '카펫', '인공지능 스피커',
-                '잡지 스탠드', '인터폰', '거실 창문', '블라인드', '커튼'
+                'the comfortable couch', 'the armchair', 'the smart TV', 'the surround speakers', 
+                'the large rug on the floor', 'the soft carpet', 'the paintings hanging on the wall', 
+                'the photo frames', 'the warm fireplace', 'the luxurious chandelier', 'the coffee table', 
+                'the side table', 'the sofa cushion', 'the TV remote control'
             ],
-            'josa_type': '를', # '를/을' 결합 유도
             'patterns': [
-                '켜줄래?', '보면서 힐링해야겠어.', '찾아서 음악 좀 틀어줘.', '작동 좀 시켜봐.', '채널 좀 돌려줘.',
-                '보면서 멍하니 있고 싶어.', '바람 좀 쐬어야겠다.', '보면서 영화 한 편 볼까?', '깨끗이 닦아야겠어.',
-                '조절하고 싶네.', '전원을 꺼줘.', '볼륨 좀 키워봐.', '덮고 누워있을래.', '좀 열어둘까?',
-                '위치를 바꿔줘.', '조작해봐.', '새로 사고 싶어.', '청소해야겠네.', '틀어놓고 쉴래.'
+                'I want to sit on [KW]', 'Can you turn on [KW]?', 'I\'ll be relaxing near [KW]', 
+                'Let\'s clean up [KW]', 'I love the look of [KW]', 'I\'m going to lie down by [KW]', 
+                'Can you adjust [KW]?', 'I am sitting right next to [KW]', 'Let\'s check out [KW]',
+                'I\'m just staring at [KW]', 'We need to move [KW]', 'I\'m going to spend time near [KW]'
             ]
         },
         'ambiguous': {
             'keywords': [
-                '가족들이 모이는 곳', '넓고 탁 트인 공간', '편하게 쉴 수 있는 곳', '집에서 제일 아늑한 공간', '햇살이 잘 드는 공간', 
-                '제일 넓은 방', '다 같이 모여 앉는 장소', '창문이 크게 난 곳', '바깥 풍경이 잘 보이는 자리', '현관문 열면 바로 보이는 곳', 
-                '집안의 중심 공간', '사람 소리가 나는 구역', '제일 시원한 장소', '가장 넓은 평수의 공간', '다 함께 TV 보는 위치', 
-                '시야가 탁 트인 구석', '공용으로 쓰는 넓은 방', '가장 따뜻한 햇빛이 드는 곳', '소파가 놓여있을 법한 구역', '이야기꽃을 피우는 장소',
-                '집에서 가장 개방적인 위치', '식구들이 다 모여있는 방', '메인 화면이 있는 자리', '바닥이 제일 넓은 구역', '바깥 하늘이 훤히 보이는 방',
-                '벽걸이 장식이 있는 곳', '시계 소리가 들리는 중앙', '다인용 의자가 있는 자리', '공기가 가장 쾌적한 구역', '큰 창문이 있는 넓은 방'
+                'the most spacious area of the house', 'the place where the family gathers', 'the cozy relaxation spot', 
+                'the main room with the big windows', 'where we usually watch shows together', 'the central lounge area', 
+                'the room with the best view of the outside', 'the place where the large sofa is'
             ],
-            'josa_type': '로',
             'patterns': [
-                '가고 싶네.', '안내해 줘.', '머무르고 싶다.', '다 같이 이동하자.', '나를 데려다줄래?', 
-                '발길이 가네.', '둘러봐야겠어.', '이끌어 줄래.', '발걸음이 옮겨지네.', '목적지를 설정해줘.', 
-                '즉시 가고 싶어.', '공간 이동하고 싶다.', '가야 정답인 것 같아.', '방향으로 복귀할래.'
+                'I feel like hanging out in [KW]', 'Let\'s take a rest in [KW]', 'Can you direct me to [KW]?', 
+                'I want to spend my afternoon in [KW]', 'Take me to [KW]', 'I am drawn to [KW]', 
+                'Let\'s find a spot in [KW]', 'I\'ll be waiting in [KW]', 'I need to clear my mind in [KW]'
             ]
         }
     },
     'kitchen': {
         'direct': {
             'keywords': [
-                '주방', '부엌', '조리 공간', '요리방', '식당 공간', '탕비실', '쿠킹 존', '싱크대 쪽 주방', '우리 집 부엌',
-                '요리하는 주방', '식당 칸', '부엌 조리대', '주방 공간', '메인 주방', '아래층 주방', '부엌 쪽', '식사 준비 공간',
-                '음식 만드는 부엌', '주방 요리 구역', '가정용 주방', '주방 시설', '식사 장소', '쿠킹 플레이스', '주방 가전 구역',
-                '현대식 주방', '부엌 안쪽', '주방 싱크대 앞', '요리방 구역', '조리실', '식탁이 있는 주방'
+                'the kitchen', 'our home kitchen', 'the main cooking area', 'the kitchen zone', 
+                'the dining and kitchen room', 'the modern kitchen space', 'the culinary area'
             ],
-            'josa_type': '로',
             'patterns': [
-                '가고 싶어.', '안내해 줄래?', '이동하자.', '가야 할 일이 있어.', '내부로 가자.', 
-                '같이 가볼까?', '바로 워프하고 싶어.', '들어갈 생각이야.', '쪽으로 안내를 부탁해.', '직진해줘.', 
-                '나를 이끌어줘.', '발길을 돌릴래.', '공간으로 갈래.'
+                'I need to go to [KW]', 'Can you guide me to [KW]?', 'Let\'s walk into [KW]', 
+                'I\'m heading to [KW]', 'Take me straight to [KW]', 'Show me where [KW] is', 
+                'I think I\'ll check [KW]', 'Let\'s check the lights in [KW]', 'I\'ll be cooking in [KW]',
+                'Can we move towards [KW]?', 'I am stepping into [KW]', 'Let\'s clean up [KW]'
             ]
         },
         'indirect': {
+            # 제공해주신 오브젝트 반영: 캐비닛, 조리대, 냉장고, 오븐, 전자레인지, 싱크대, 키친 아일랜드, 바 스툴 등
             'keywords': [
-                '냉장고', '식탁', '싱크대', '컵라면', '정수기', '전자레인지', '인덕션', '에어프라이어', '밥솥', 
-                '커피머신', '도마', '프라이팬', '식기세척기', '간식 상자', '토스터기', '양념통', '김치냉장고',
-                '식기 건조대', '냄비', '수저통', '가스레인지', '오븐', '커피 포트', '와인 셀러', '머그컵',
-                '식탁 의자', '주방 세제', '행주', '고무장갑', '조리 도구'
+                'the upper cabinet', 'the lower kitchen cabinets', 'the marble countertop', 'the refrigerator', 
+                'the baking oven', 'the microwave', 'the kitchen sink', 'the kitchen island', 'the bar stools', 
+                'the frying pan on the counter', 'the water purifier', 'the dishwasher', 'the gas stove'
             ],
-            'josa_type': '를',
             'patterns': [
-                '문을 열어봐야겠어.', '찾아서 음악 좀 틀어줘.', '이용해서 음식 좀 데워줘.', '가동해야겠다.', '위를 좀 닦아줄래?', 
-                '어디다 두었더라?', '새로 사야겠어.', '이용해서 요리하자.', '전원을 연결해줘.', '깨끗이 빨아줘.', 
-                '열어서 확인해볼래.', '작동시켜줘.', '정리정돈 해야겠어.'
+                'I need to open [KW]', 'Let\'s clean up [KW]', 'I\'m standing right by [KW]', 
+                'Can you turn on [KW]?', 'I\'m going to put this inside [KW]', 'Let\'s sit on [KW]', 
+                'Something is sitting on [KW]', 'I should wash [KW]', 'I am looking at [KW]',
+                'Can you check the temperature of [KW]?', 'I will wipe [KW]', 'Let\'s gather around [KW]'
             ]
         },
         'ambiguous': {
             'keywords': [
-                '맛있는 냄새가 나는 곳', '배를 채울 수 있는 곳', '식사할 만한 곳', '요리할 수 있는 위치', '물이 나오는 장소', 
-                '가전제품이 몰려 있는 곳', '야식이 숨겨진 공간', '그릇 소리가 나는 방', '음식 냄새가 스며든 곳', '조리 도구가 모여 있는 자리', 
-                '식재료가 가득한 장소', '물 끓는 소리가 들리는 방', '도마 소리가 울리는 공간', '숟가락과 젓가락이 있는 방', '시원한 음료가 보관된 위치',
-                '엄마가 요리하시는 장소', '식기들이 부딪히는 구역', '무언가 끓고 있는 방', '음식 간을 보는 공간', '아침 식사를 하는 자리',
-                '설거지거리가 모여있는 곳', '칼질 소리가 들리는 방', '따뜻한 밥 냄새가 나는 장소', '얼음물 마실 수 있는 구역', '간식을 찾아볼 수 있는 공간',
-                '베이킹을 할 수 있는 자리', '음식물 쓰레기통이 있는 구역', '컵과 접시가 가득한 방', '프라이팬 열기가 남아있는 장소', '식재료를 다듬는 구역'
+                'the place that smells like delicious food', 'where we store all the snacks', 'the meal preparation spot', 
+                'the room with all the cooking appliances', 'where the dishes are washed', 'the area near the food storage', 
+                'the room where I can grab a drink', 'the space where we make breakfast'
             ],
-            'josa_type': '로',
             'patterns': [
-                '데려다줘.', '가자.', '가고 싶어지네.', '잠깐 들러야겠어.', '안내를 부탁해도 될까?', 
-                '가야 살 것 같아.', '이동해서 먹자.', '가야 할 운명이야.', '목적지를 찍어줘.', '들어가면 기분이 좋아져.', 
-                '향해 걸어갈래.', '방향으로 대기할게.'
+                'I am heading to [KW]', 'Let\'s go to [KW]', 'Can you guide me to [KW]?', 
+                'I want to check out [KW]', 'Take me to [KW]', 'I think I need to stay in [KW]', 
+                'Let\'s meet in [KW]', 'I\'m curious about what\'s in [KW]', 'I am walking towards [KW]'
             ]
         }
     },
     'bedroom': {
         'direct': {
             'keywords': [
-                '침실', '내 방', '안방', '잠자는 방', '개인 침실', '마스터룸', '침실 공간', '큰방 침실',
-                '아늑한 침실', '잠자는 침실', '작은방 침실', '부부 침실', '나만의 침실', '안쪽 침실', '침실 내부',
-                '휴식 침실', '내 침실', '침실 구역', '침실 안방', '수면실', '수면 전용 방', '꿀잠 자는 방',
-                '잠 청하는 방', '침실 침대 쪽', '오른쪽 침실', '조용한 침실', '불 꺼진 침실', '나만의 안방', '안방 침실'
+                'the bedroom', 'my private bedroom', 'the master bedroom', 'the main sleeping room', 
+                'my own bedroom space', 'the quiet bedroom area', 'the back bedroom'
             ],
-            'josa_type': '로',
             'patterns': [
-                '들어가서 자려고.', '안내해 줘.', '가서 누워야겠어.', '이동할래.', '가자.', 
-                '자러 가야겠어.', '안내를 부탁해.', '직행하자.', '들어가고 싶어.', '나를 데려다줄래?', 
-                '발길을 돌리자.', '방향으로 진입할래.'
+                'I\'m going to sleep in [KW]', 'Please guide me to [KW]', 'Let\'s head to [KW]', 
+                'I want to enter [KW]', 'Show me where [KW] is', 'Can you take me to [KW]?', 
+                'I am going inside [KW]', 'I need to relax in [KW]', 'Let\'s check [KW]',
+                'I\'m walking towards [KW]', 'Can you turn off the lights in [KW]?', 'I\'ll be staying in [KW]'
             ]
         },
         'indirect': {
+            # 제공해주신 오브젝트 반영: 침대, 헤드보드, 나이트스탠드, 조명, 서랍장, 옷장, 거울, 러그, 커튼, 블라인드 등
             'keywords': [
-                '침대', '이불', '베개', '수면등', '암막 커튼', '화장대', '옷장', '베드 트레이', '잠옷', 
-                '수면 안대', '수면 매트리스', '알람 시계', '이불 커버', '바디 필로우', '가습기', '수면 보조제',
-                '침대 헤드', '협탁', '스탠드 불빛', '잠옷 바지', '깃털 베개', '구스 이불', '매트리스 패드',
-                '수면 음악 스피커', '옷걸이', '전신거울', '디퓨저', '귀마개', '온수매트', '전기요'
+                'the bed with the wooden headboard', 'the small nightstand', 'the bedside lamp', 
+                'the clothing dresser', 'the main closet', 'the full-length mirror', 'the cozy bedroom rug', 
+                'the blackout curtains', 'the window blinds', 'the soft pillow', 'the warm blanket'
             ],
-            'josa_type': '를',
             'patterns': [
-                '쳐줄래?', '켜고 누워있고 싶어.', '안고 누워야겠어.', '머리맡에 놔둘래.', '털어줘야겠다.', 
-                '갈아입어야겠어.', '쓰고 자야지.', '좀 켜고 자야겠다.', '정리해야겠다.', '입고 누워있어.', 
-                '새로 세팅해줘.', '깨끗하게 닦아줘.'
+                'I want to lie down on [KW]', 'Can you turn off [KW]?', 'I\'m looking for my clothes in [KW]', 
+                'Let\'s open [KW]', 'I am standing in front of [KW]', 'Can you close [KW]?', 
+                'I need to fix [KW]', 'I\'m going to rest my head near [KW]', 'I\'ll sit right by [KW]',
+                'Can you adjust [KW]?', 'I\'m changing my clothes near [KW]', 'I want to crawl under [KW]'
             ]
         },
         'ambiguous': {
             'keywords': [
-                '조용히 쉴 수 있는 곳', '잠잘 수 있는 공간', '오늘 하루를 마무리할 곳', '눈 감고 쉴 만한 장소', '가장 사적인 공간', 
-                '불이 꺼진 어두운 방', '혼자만의 시간을 보낼 곳', '베개가 놓인 자리', '꿈나라로 갈 수 있는 장소', '완전한 휴식이 가능한 방', 
-                '아무도 방해하지 않는 위치', '이불 속으로 대피할 수 있는 방', '누워서 뒹굴거릴 만한 구역', '스탠드 불빛만 켜진 방', '단잠을 잘 수 있는 위치',
-                '수면을 취하기에 적합한 공간', '세상에서 가장 아늑한 구석', '눈감고 명상할 수 있는 방', '피로를 완전히 풀 수 있는 장소', '깊은 잠에 빠져들 공간',
-                '나만의 비밀스러운 방', '외부 소음이 차단된 공간', '매트리스가 깔려있는 장소', '암막 분위기가 조성된 방', '누울 자리가 마련된 공간',
-                '단잠에 빠져들기 좋은 장소', '하루의 피로가 풀리는 방', '속세와 단절된 평화로운 공간', '꿀잠을 보장하는 안락한 위치', '수면 모드가 작동되는 방'
+                'the quietest room in the house', 'the place where I end my day', 'the dark and cozy sleeping spot', 
+                'my personal relaxation zone', 'where the pillows and blankets are', 'the room for a perfect night\'s sleep', 
+                'the space where I can completely shut down', 'the most private area upstairs'
             ],
-            'josa_type': '로',
             'patterns': [
-                '가고 싶다.', '나를 안내해 줘.', '가서 눈 좀 붙이자.', '들어가서 문 닫고 싶어.', '데려다주면 좋겠어.', 
-                '즉시 이동하고 싶어져.', '가야 진정한 휴식이야.', '나를 데려다줄래?', '안내를 부탁한다.', '피신해야겠어.', 
-                '목적지 변경을 요청해.'
+                'I am heading to [KW]', 'Let\'s go to [KW]', 'Can you show me [KW]?', 
+                'I want to hide in [KW]', 'Take me to [KW]', 'I need to spend some time in [KW]', 
+                'I will be sleeping in [KW]', 'Let\'s move toward [KW]', 'I feel like staying in [KW]'
             ]
         }
     },
     'exercise_room': {
         'direct': {
             'keywords': [
-                '운동방', '홈트레이닝 룸', '체력 단련실', '헬스 전용 방', '피트니스 룸', '운동 공간', '나만의 헬스장',
-                '운동하는 방', '홈트룸', '트레이닝 룸', '근력 운동방', '피트니스 공간', '체력단련 공간', '운동 기구방',
-                '홈짐', '개인 홈짐', '우리 집 헬스장', '웨이트 트레이닝 방', '스트레칭 룸', '요가 전용 방', '운동방 공간',
-                '체육방', '미니 헬스장', '개인 피트니스 룸', '실내 운동방', '체력 관리 방', '헬스 룸', '홈트레이닝 전용 공간', '운동 구역'
+                'the exercise room', 'the home training room', 'the fitness room', 'our home gym', 
+                'the weight training room', 'the workout space', 'the personal fitness zone'
             ],
-            'josa_type': '로',
             'patterns': [
-                '가서 몸 좀 풀자.', '안내해 줄래?', '가서 땀 좀 흘려야겠어.', '이동하자.', '운동하러 갈 시간이야.', 
-                '자리를 옮겨서 시작하자.', '나를 데려가줘.', '즉시 이동해.', '출근 도장 찍어야지.', '발걸음을 옮기자.', 
-                '안내 부탁해.', '방향으로 안내를 시작해.'
+                'I\'m heading to [KW]', 'Can you guide me to [KW]?', 'Let\'s go exercise in [KW]', 
+                'Show me the way to [KW]', 'I need to visit [KW]', 'Take me to [KW]', 
+                'I\'m going to sweat in [KW]', 'Let\'s check the equipment in [KW]', 'I will open the door to [KW]',
+                'Can we go to [KW]?', 'I\'m walking into [KW]', 'Let\'s clean up [KW]'
             ]
         },
         'indirect': {
+            # 제공해주신 오브젝트 반영: 덤벨, 바벨, 웨이트 랙, 러닝머신, 일립티컬, 사이클, 벤치프레스, 대형 거울, 고무 바닥재 등
             'keywords': [
-                '덤벨', '요가 매트', '러닝머신', '실내 자전거', '폼롤러', '스쿼트 머신', '스트레칭 밴드', '풀업 바', 
-                '바벨', '풀업 기구', '케틀벨', '짐볼', '푸쉬업 바', '악력기', '보수 볼', '인바디 체중계',
-                '스텝퍼', '치닝디핑', '아령', '모래주머니', '손목 보호대', '운동용 거울', '턱걸이 봉', '라텍스 밴드',
-                '마사지 볼', '트레드밀', '사이클 기구', '근력 밴드', '벤치 프레스', '요가 블록'
+                'the heavy dumbbells', 'the long barbell', 'the sturdy weight rack', 'the indoor treadmill', 
+                'the elliptical machine', 'the stationary cycle', 'the bench press station', 'the massive wall mirror', 
+                'the thick rubber flooring', 'the exercise mat', 'the fitness pull-up bar'
             ],
-            'josa_type': '를',
             'patterns': [
-                '깔고 스트레칭해야지.', '들고 운동해야겠어.', '이용해서 중심 잡아볼래.', '당기면서 운동하자.', '조립해야겠어.', 
-                '차고 뛰어볼까?', '양손에 들고 스쿼트하자.', '어디다 두었더라?', '잡고 운동을 시작해볼까.', '새로 배치해줘.', 
-                '깨끗하게 치워줄래.'
+                'I want to use [KW]', 'I am going to run on [KW]', 'Let\'s lift [KW]', 
+                'I\'m standing right on [KW]', 'Can you wipe [KW]?', 'I need to check [KW]', 
+                'I\'m looking at my posture in [KW]', 'Let\'s move [KW]', 'I will set up [KW]',
+                'Can you help me with [KW]?', 'I\'m exercising right next to [KW]', 'I am stepping onto [KW]'
             ]
         },
         'ambiguous': {
             'keywords': [
-                '체력을 키울 수 있는 곳', '몸을 움직일 만한 공간', '땀 흘리며 스트레스 풀 곳', '개운하게 움직일 장소', '지방을 태울 수 있는 방', 
-                '심박수를 올릴 만한 위치', '거울이 사방에 붙은 방', '철봉이 설치된 공간', '근육을 자극할 수 있는 자리', '건강해지는 느낌이 드는 방', 
-                '활력을 되찾을 수 있는 장소', '오운완을 달성할 수 있는 방', '근손실을 방지할 수 있는 공간', '숨이 턱 끝까지 찰 만한 장소', '몸매 관리를 하는 전용 방',
-                '매트가 두껍게 깔린 구역', '단백질 쉐이크 먹기 전 들를 곳', '칼로리를 대량 소모할 장소', '찌푸둥한 몸을 일깨울 공간', '심장이 터질 듯이 뛰는 방',
-                '근력 강화를 위한 특별한 방', '스트레칭으로 유연해지는 장소', '무거운 철무더기가 있는 구역', '땀 냄새가 건강하게 배어있는 방', '유산소 운동용 기계가 있는 위치',
-                '다이어트 의지가 불타는 공간', '오늘의 루틴을 소화할 장소', '몸의 활력을 깨워줄 구역', '스쿼트 100개 할 수 있는 장소', '근육 펌핑을 시켜줄 만한 방'
+                'the place where I burn calories', 'the room built for sweating out stress', 'where all the heavy iron is kept', 
+                'the space with the specialized shock-absorbing floor', 'where I complete my daily physical routine', 
+                'the zone designed for getting fit', 'where I go to boost my energy', 'the room with the sidetracked cardio machines'
             ],
-            'josa_type': '로',
             'patterns': [
-                '데려다줘.', '가고 싶네.', '이동해서 땀 빼야지.', '발길을 옮겨볼까.', '나를 즉시 이끌어줘.', 
-                '가야 다이어트 성공해.', '공간 이동 시켜줘.', '목적지 변경해줘.', '가서 제대로 해볼래.', '향해 출발해줘.', 
-                '방향으로 진입할래.'
+                'I am going to [KW]', 'Let\'s visit [KW]', 'Can you guide me to [KW]?', 
+                'I\'m heading towards [KW]', 'Take me to [KW]', 'I think I need to be in [KW]', 
+                'Let\'s start our day in [KW]', 'I\'m walking into [KW]', 'I feel like spending an hour in [KW]'
             ]
         }
     }
 }
 
 # ==========================================
-# 3. 한국어 종성(받침) 판별 및 조사 자동 선택 함수
-# ==========================================
-def get_appropriate_josa(word, josa_type):
-    if not word:
-        return ""
-    
-    last_char = word[-1]
-    if not ('가' <= last_char <= '힣'):
-        return "" # 한글이 아니면 공백 처리
-        
-    char_code = ord(last_char) - 44032
-    jongseong = char_code % 28 # 0이면 받침 없음, 1 이상이면 받침 있음
-    
-    if josa_type == '로':
-        # 'ㄹ' 받침(종성 인덱스 8)일 때는 '로'가 붙음 (예: 리모델링룸로 -> 리모델링룸으로 X)
-        if jongseong == 0 or jongseong == 8:
-            return "로"
-        else:
-            return "으로"
-            
-    elif josa_type == '를':
-        return "를" if jongseong == 0 else "을"
-        
-    return ""
-
-# ==========================================
-# 4. 데이터 생성 및 난이도별 균등 분배 알고리즘
+# 3. 데이터 생성 알고리즘 실행
 # ==========================================
 classes = ['living_room', 'kitchen', 'bedroom', 'exercise_room']
 labels = ['direct', 'indirect', 'ambiguous']
@@ -247,53 +195,50 @@ labels = ['direct', 'indirect', 'ambiguous']
 generated_data = []
 unique_sentences = set()
 current_id = 1
-target_per_label = 3334  # 난이도별 약 3,333개씩 생성하여 클래스당 총 10,000개 보장
+target_per_class = 10000
 
-print("🚀 조사 정밀 매칭 파이프라인 가동 및 대용량 데이터 생성 시작...")
+print("Generating 40,000 unique English sentences based on your object list...")
 
 for cls in classes:
+    count = 0
     cfg = templates[cls]
     
-    for lbl in labels:
-        count = 0
-        # 각 클래스의 난이도별 데이터 개수를 제약하여 편향 방지
-        while count < target_per_label:
-            kw = random.choice(cfg[lbl]['keywords'])
-            target_josa = cfg[lbl]['josa_type']
-            ptn = random.choice(cfg[lbl]['patterns'])
-            pfx = random.choice(prefixes)
-            sfx = random.choice(suffixes)
+    while count < target_per_class:
+        lbl = random.choice(labels)
+        
+        # 키워드와 패턴 선택 후 결합
+        kw = random.choice(cfg[lbl]['keywords'])
+        ptn = random.choice(cfg[lbl]['patterns'])
+        sentence_core = ptn.replace('[KW]', kw)
+        
+        # 접두사 및 접미사 무작위 조합
+        pfx = random.choice(prefixes)
+        sfx = random.choice(suffixes)
+        
+        # 첫 글자 대문자화 및 문장 완성
+        full_sentence = f"{pfx}{sentence_core}{sfx}".strip()
+        
+        # 문장 마지막에 마침표 처리 검증
+        if full_sentence.endswith(','):
+            full_sentence = full_sentence[:-1]
+        if not full_sentence.endswith(('.', '?', '!')):
+            full_sentence += "."
             
-            # 규칙 기반 자연스러운 조사 결합
-            josa = get_appropriate_josa(kw, target_josa)
-
-            # 패턴이 이미 문장 종결 부호로 끝나면 접미사 미적용
-            effective_sfx = "" if ptn.endswith(('.', '?', '!')) else sfx
-
-            # 공백 결합 최소화 및 결합 후 공백 다듬기
-            sentence = f"{pfx}{kw}{josa} {ptn}{effective_sfx}".strip()
-            sentence = " ".join(sentence.split())
-
-            # 문장 부호 정제
-            sentence = sentence.replace("..", ".").replace(" .", ".")
-            if not sentence.endswith(('.', '?', '!')):
-                sentence += "."
-                
-            # 완벽한 중복 제거
-            if sentence not in unique_sentences:
-                unique_sentences.add(sentence)
-                generated_data.append([current_id, sentence, cls, lbl])
-                current_id += 1
-                count += 1
-
-# 상위 40,000개 슬라이싱 (딱 떨어지게 40,000개 맞추기)
-final_data = generated_data[:40000]
+        # 첫 단어 대문자 보정 (접두사가 빈 문자열일 때를 대비)
+        full_sentence = full_sentence[0].upper() + full_sentence[1:]
+        
+        # 중복 검사
+        if full_sentence not in unique_sentences:
+            unique_sentences.add(full_sentence)
+            generated_data.append([current_id, full_sentence, cls, lbl])
+            current_id += 1
+            count += 1
 
 # CSV 파일 저장
-filename = '/mnt/ssd/hj/Robot-Learning/text_data/dataset_final_40000.csv'
-with open(filename, 'w', encoding='utf-8-sig', newline='') as f:
+filename = '/mnt/ssd/hj/Robot-Learning/text_data/room_objects_dataset_40000.csv'
+with open(filename, 'w', encoding='utf-8', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['id', 'sentence', 'class', 'label'])
-    writer.writerows(final_data)
+    writer.writerows(generated_data)
 
-print(f"🎉 성공! 총 {len(final_data)}개의 정제된 문장이 '{filename}' 파일로 저장되었습니다.")
+print(f"🎉 Completed! Total {len(generated_data)} rows saved to '{filename}'.")

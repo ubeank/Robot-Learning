@@ -2,49 +2,49 @@
 CLIP Evaluation Results (ViT-B/32)
 ============================================================
 Image dir : /mnt/ssd/hj/Robot-Learning/image_data/selected_rooms/val_256
-Text CSV  : /mnt/ssd/hj/Robot-Learning/text_data/text_eval.csv
+Text CSV  : /mnt/ssd/hj/Robot-Learning/text_data/text_eval_600.csv
 Images    : 400 (100 per class)
 Texts     : 600 (150 per class)
 
 [ 1. Image → Text Classification ]
-  Overall Accuracy: 35.50% (142/400)
+  Overall Accuracy: 95.25% (381/400)
   Per-class Accuracy:
-    living_room         : 94.0%
-    kitchen             : 1.0%
-    bedroom             : 28.0%
-    exercise_room       : 19.0%
-
-  Confusion Matrix (rows=true, cols=pred):
-    living_roo      kitchen      bedroom   exercise_r
-  living_roo            94            0            4            2
-  kitchen               80            1           19            0
-  bedroom               72            0           28            0
-  exercise_r            20            0           61           19
-
-[ 2. Text → Image Classification ]
-  Overall Accuracy: 26.33% (158/600)
-  Per-class Accuracy:
-    living_room         : 4.7%
-    kitchen             : 0.7%
-    bedroom             : 0.0%
+    living_room         : 91.0%
+    kitchen             : 98.0%
+    bedroom             : 92.0%
     exercise_room       : 100.0%
 
   Confusion Matrix (rows=true, cols=pred):
     living_roo      kitchen      bedroom   exercise_r
-  living_roo             7            0            1          142
-  kitchen                0            1            0          149
-  bedroom                0            0            0          150
-  exercise_r             0            0            0          150
+  living_roo            91            3            5            1
+  kitchen                1           98            1            0
+  bedroom                8            0           92            0
+  exercise_r             0            0            0          100
+
+[ 2. Text → Image Classification ]
+  Overall Accuracy: 93.00% (558/600)
+  Per-class Accuracy:
+    living_room         : 95.3%
+    kitchen             : 96.7%
+    bedroom             : 83.3%
+    exercise_room       : 96.7%
+
+  Confusion Matrix (rows=true, cols=pred):
+    living_roo      kitchen      bedroom   exercise_r
+  living_roo           143            0            7            0
+  kitchen                2          145            3            0
+  bedroom               14            2          125            9
+  exercise_r             0            3            2          145
 
 [ 3. Text → Image: Accuracy by Difficulty (label) ]
-  direct      : 23.3%  (47/202)
-  indirect    : 25.8%  (54/209)
-  ambiguous   : 30.2%  (57/189)
+  direct      : 100.0%  (200/200)
+  indirect    : 93.5%  (187/200)
+  ambiguous   : 85.5%  (171/200)
 
 [ 4. Text → Image: Accuracy by Class × Difficulty ]
   class                     direct    indirect   ambiguous
-  living_room                 0.0%       13.0%        0.0%
-  kitchen                     0.0%        0.0%        2.0%
-  bedroom                     0.0%        0.0%        0.0%
-  exercise_room             100.0%      100.0%      100.0%
+  living_room               100.0%       90.0%       96.0%
+  kitchen                   100.0%       98.0%       92.0%
+  bedroom                   100.0%       88.0%       62.0%
+  exercise_room             100.0%       98.0%       92.0%
 ============================================================
