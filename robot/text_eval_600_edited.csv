@@ -1,0 +1,601 @@
+﻿id,sentence,class,label
+7875,"Well, Is it okay to go to the family living room? to feel better.",living_room,direct
+1347,"Tonight, Is it okay to go to the central living room? for a change.",living_room,direct
+303,I need to step into the living room for a change.,living_room,direct
+9184,"After a long day, Show me the way to the living room for a moment.",living_room,direct
+3368,"Look, I'm just going to walk into the cozy living room because that's what I need.",living_room,direct
+3014,Maybe Let's move to the central living room before it gets too late.,living_room,direct
+2756,"First of all, Let's gather in our main living room because I feel like it.",living_room,direct
+1667,"Actually, I am heading towards the living room zone immediately.",living_room,direct
+9134,"Since I'm tired, Could you guide me to the cozy living room? like, right now.",living_room,direct
+1216,"Right now, Let's move to the living room zone for a moment.",living_room,direct
+8384,"Honestly, I need to step into the cozy living room to clear my head.",living_room,direct
+9175,"Just so you know, Is it okay to go to the spacious living room area? if you can.",living_room,direct
+6727,"After a long day, Let's move to the family living room as soon as possible.",living_room,direct
+1048,"Since I'm bored, I think I will stay in the living room zone.",living_room,direct
+7276,Maybe Let's head over to the cozy living room since I have nothing else to do.,living_room,direct
+5236,"Without a doubt, Let's head over to the cozy living room to clear my head.",living_room,direct
+392,"Actually, Let's head over to the central living room without waiting.",living_room,direct
+369,I think Let's gather in the cozy living room without waiting.,living_room,direct
+1115,"After a long day, I want to go to our main living room.",living_room,direct
+2668,"As planned, I'm just going to walk into the living room zone.",living_room,direct
+2860,"If possible, Is it okay to go to the central living room? for real.",living_room,direct
+6235,Maybe Let's move to the cozy living room to feel better.,living_room,direct
+7407,"First of all, Could you guide me to the cozy living room? if you can.",living_room,direct
+328,"If you don't mind, I think I will stay in the living room.",living_room,direct
+6956,Maybe I want to go to the living room zone for a change.,living_room,direct
+2444,"Actually, Let's head over to the family living room for a change.",living_room,direct
+8865,I think I need to step into the family living room to spend some time.,living_room,direct
+8020,"First of all, I need to step into the family living room.",living_room,direct
+8679,"By the way, Let's move to the spacious living room area to feel better.",living_room,direct
+6725,"Actually, Show me the way to the cozy living room before it gets too late.",living_room,direct
+5183,"After a long day, I think I will stay in the cozy living room if you can.",living_room,direct
+2692,"If possible, I'm just going to walk into the living room right away.",living_room,direct
+5552,"Actually, Show me the way to the cozy living room to spend some time.",living_room,direct
+7267,"This weekend, I'm just going to walk into the living room for real.",living_room,direct
+3405,"For some reason, Is it okay to go to the family living room? to spend some time.",living_room,direct
+9953,"If possible, Could you guide me to the family living room? as soon as possible.",living_room,direct
+90,"First of all, I need to step into the family living room like, right now.",living_room,direct
+9376,"As planned, Is it okay to go to the family living room? because I feel like it.",living_room,direct
+9907,"Hey, I am heading towards the spacious living room area right away.",living_room,direct
+1905,"Since I'm tired, Is it okay to go to the family living room? to clear my head.",living_room,direct
+8646,I guess Let's move to our main living room to spend some time.,living_room,direct
+5244,"By the way, I am heading towards the family living room immediately.",living_room,direct
+4186,"Lately, Let's head over to the living room like, right now.",living_room,direct
+3404,I think I am heading towards our main living room to spend some time.,living_room,direct
+1858,"Hey, Let's gather in the living room zone for real.",living_room,direct
+2620,"First of all, Can you take me to the living room zone? without waiting.",living_room,direct
+9443,"Right now, I'm just going to walk into our main living room.",living_room,direct
+4135,Let's head over to the living room since I have nothing else to do.,living_room,direct
+1212,"First of all, Can you take me to our main living room? for a moment.",living_room,direct
+1106,"Look, I think I will stay in the family living room for real.",living_room,direct
+4640,"First of all, Let's clean up the side table for a moment.",living_room,indirect
+1181,"Just so you know, Let's check out the surround speakers since I have nothing else to do.",living_room,indirect
+4400,"By the way, Let's clean up the soft carpet to spend some time.",living_room,indirect
+4210,I guess I'm just staring at the comfortable couch because that's what I need.,living_room,indirect
+7314,"After a long day, Can you turn on the photo frames? to feel better.",living_room,indirect
+3232,I guess Can you adjust the armchair? since I have nothing else to do.,living_room,indirect
+9831,"Hey, I want to sit on the coffee table like, right now.",living_room,indirect
+513,"Right now, I'm going to spend time near the armchair since I have nothing else to do.",living_room,indirect
+8812,"Honestly, I love the look of the smart TV because I feel like it.",living_room,indirect
+5556,"This weekend, Can you adjust the paintings hanging on the wall? right away.",living_room,indirect
+6498,"For some reason, I am sitting right next to the photo frames for a change.",living_room,indirect
+1537,"Actually, We need to move the warm fireplace.",living_room,indirect
+4620,"Right now, Let's check out the warm fireplace like, right now.",living_room,indirect
+964,I am sitting right next to the TV remote control immediately.,living_room,indirect
+6670,"Lately, We need to move the warm fireplace before it gets too late.",living_room,indirect
+3589,"Honestly, I'm just staring at the armchair to clear my head.",living_room,indirect
+7615,"As planned, I'm going to spend time near the warm fireplace if you can.",living_room,indirect
+7495,"Lately, I'll be relaxing near the large rug on the floor before going out.",living_room,indirect
+4438,"After a long day, Let's clean up the coffee table since I have nothing else to do.",living_room,indirect
+6972,"Unbelievably, Can you adjust the comfortable couch? because that's what I need.",living_room,indirect
+2357,I think I'm going to spend time near the surround speakers to clear my head.,living_room,indirect
+8508,"Since I'm tired, I am sitting right next to the warm fireplace if you can.",living_room,indirect
+860,"By the way, I'm going to spend time near the soft carpet like, right now.",living_room,indirect
+541,"Without a doubt, I'm just staring at the comfortable couch because I feel like it.",living_room,indirect
+8001,"Basically, I'm going to spend time near the TV remote control.",living_room,indirect
+2773,I guess I'm going to spend time near the luxurious chandelier right away.,living_room,indirect
+9381,I think I want to sit on the paintings hanging on the wall if you can.,living_room,indirect
+3551,"Just so you know, Let's clean up the photo frames for a change.",living_room,indirect
+982,"Surprisingly, I'll be relaxing near the side table because that's what I need.",living_room,indirect
+2835,"Surprisingly, We need to move the large rug on the floor before it gets too late.",living_room,indirect
+1232,"Tonight, Let's check out the luxurious chandelier before it gets too late.",living_room,indirect
+3401,"Right now, I am sitting right next to the luxurious chandelier immediately.",living_room,indirect
+5479,"Suddenly, I'm going to lie down by the large rug on the floor.",living_room,indirect
+7700,"Lately, We need to move the sofa cushion since I have nothing else to do.",living_room,indirect
+4468,"If you don't mind, We need to move the soft carpet before going out.",living_room,indirect
+2021,"Unbelievably, I'll be relaxing near the paintings hanging on the wall to clear my head.",living_room,indirect
+4531,"Surprisingly, I'm going to spend time near the large rug on the floor immediately.",living_room,indirect
+4362,"After a long day, I'm going to spend time near the large rug on the floor since I have nothing else to do.",living_room,indirect
+2556,"Basically, I'm just staring at the photo frames because I feel like it.",living_room,indirect
+8115,"For some reason, Can you adjust the coffee table? to feel better.",living_room,indirect
+3265,"By the way, I'll be relaxing near the soft carpet for real.",living_room,indirect
+8473,"Since I'm bored, Can you adjust the TV remote control? because that's what I need.",living_room,indirect
+8264,"Without a doubt, I want to sit on the comfortable couch before it gets too late.",living_room,indirect
+7855,"Right now, We need to move the TV remote control immediately.",living_room,indirect
+878,"For some reason, Let's check out the photo frames because that's what I need.",living_room,indirect
+7369,"Without a doubt, I am sitting right next to the comfortable couch without waiting.",living_room,indirect
+7694,"By the way, I love the look of the large rug on the floor to clear my head.",living_room,indirect
+2128,"If you don't mind, Can you adjust the paintings hanging on the wall? for a moment.",living_room,indirect
+6476,"By the way, I'll be relaxing near the paintings hanging on the wall for a change.",living_room,indirect
+8787,"Lately, I'm going to spend time near the TV remote control to clear my head.",living_room,indirect
+3019,"Since I'm tired, I feel like hanging out in the main room with the big windows to clear my head.",living_room,ambiguous
+2026,"After a long day, Let's take a rest in the central lounge area without waiting.",living_room,ambiguous
+5756,"Without a doubt, I am drawn to where we usually watch shows together for a moment.",living_room,ambiguous
+4646,"If possible, I feel like hanging out in the most spacious area of the house because that's what I need.",living_room,ambiguous
+3343,"Basically, I want to spend my afternoon in the central lounge area because I feel like it.",living_room,ambiguous
+7956,"If you don't mind, I am drawn to the cozy relaxation spot like, right now.",living_room,ambiguous
+8526,"By the way, I feel like hanging out in the central lounge area since I have nothing else to do.",living_room,ambiguous
+6896,Maybe Let's find a spot in the place where the large sofa is to spend some time.,living_room,ambiguous
+2722,"First of all, I feel like hanging out in the central lounge area if you can.",living_room,ambiguous
+8486,"Honestly, I feel like hanging out in the room with the best view of the outside because I feel like it.",living_room,ambiguous
+4006,"For some reason, I want to spend my afternoon in the cozy relaxation spot to clear my head.",living_room,ambiguous
+9513,"For some reason, Can you direct me to the main room with the big windows? since I have nothing else to do.",living_room,ambiguous
+9598,"Basically, Let's find a spot in where we usually watch shows together immediately.",living_room,ambiguous
+691,"First of all, Take me to the cozy relaxation spot to spend some time.",living_room,ambiguous
+2819,"For some reason, I am drawn to the most spacious area of the house if you can.",living_room,ambiguous
+407,"I think Let's take a rest in the main room with the big windows like, right now.",living_room,ambiguous
+9973,"Suddenly, I am drawn to the main room with the big windows before it gets too late.",living_room,ambiguous
+3918,"Without a doubt, I am drawn to the most spacious area of the house before it gets too late.",living_room,ambiguous
+4937,"Since I'm tired, Take me to the place where the family gathers since I have nothing else to do.",living_room,ambiguous
+3326,"By the way, I want to spend my afternoon in the main room with the big windows since I have nothing else to do.",living_room,ambiguous
+816,"Honestly, Let's take a rest in the place where the family gathers for a change.",living_room,ambiguous
+2624,"This weekend, I feel like hanging out in the room with the best view of the outside immediately.",living_room,ambiguous
+7052,I guess I'll be waiting in the place where the family gathers because that's what I need.,living_room,ambiguous
+8906,I guess Let's find a spot in the place where the family gathers because I feel like it.,living_room,ambiguous
+3907,"Hey, I need to clear my mind in the place where the large sofa is if you can.",living_room,ambiguous
+2642,"This weekend, Take me to the place where the family gathers for a change.",living_room,ambiguous
+8133,"Right now, Take me to the central lounge area for a moment.",living_room,ambiguous
+6187,Maybe Let's take a rest in the main room with the big windows before it gets too late.,living_room,ambiguous
+4870,I think I feel like hanging out in the main room with the big windows to spend some time.,living_room,ambiguous
+7995,"Since I'm tired, I want to spend my afternoon in where we usually watch shows together.",living_room,ambiguous
+5715,"Well, Let's find a spot in the central lounge area since I have nothing else to do.",living_room,ambiguous
+1780,"Since I'm tired, I feel like hanging out in the place where the large sofa is right away.",living_room,ambiguous
+3283,"If you don't mind, Let's take a rest in the most spacious area of the house right away.",living_room,ambiguous
+1743,"If possible, I need to clear my mind in the central lounge area before going out.",living_room,ambiguous
+3053,"Right now, I'll be waiting in the cozy relaxation spot to clear my head.",living_room,ambiguous
+9222,I guess Let's take a rest in the place where the large sofa is to feel better.,living_room,ambiguous
+6968,I feel like hanging out in the main room with the big windows to feel better.,living_room,ambiguous
+6697,"As planned, I feel like hanging out in the place where the large sofa is immediately.",living_room,ambiguous
+3266,"Since I'm tired, I feel like hanging out in the most spacious area of the house to feel better.",living_room,ambiguous
+9246,"This weekend, Let's take a rest in the place where the large sofa is like, right now.",living_room,ambiguous
+7280,Maybe Let's find a spot in the main room with the big windows for a moment.,living_room,ambiguous
+5290,"Look, I am drawn to the place where the family gathers before going out.",living_room,ambiguous
+7261,"First of all, I am drawn to where we usually watch shows together as soon as possible.",living_room,ambiguous
+4912,"Since I'm bored, Take me to the place where the large sofa is for real.",living_room,ambiguous
+4435,"As planned, Let's take a rest in the main room with the big windows to clear my head.",living_room,ambiguous
+2720,"Look, Take me to the place where the family gathers right away.",living_room,ambiguous
+1733,"Unbelievably, I feel like hanging out in the place where the family gathers for a moment.",living_room,ambiguous
+6313,"Actually, I need to clear my mind in the most spacious area of the house immediately.",living_room,ambiguous
+6113,"First of all, I need to clear my mind in the place where the family gathers like, right now.",living_room,ambiguous
+1164,"Suddenly, Let's find a spot in the most spacious area of the house right away.",living_room,ambiguous
+19531,"Honestly, I think I'll check our home kitchen because that's what I need.",kitchen,direct
+10596,"Basically, Show me where the dining and kitchen room is without waiting.",kitchen,direct
+11390,I guess I'm heading to the culinary area for a change.,kitchen,direct
+11970,"By the way, Let's walk into the kitchen zone without waiting.",kitchen,direct
+17928,"Since I'm bored, Let's check the lights in the kitchen if you can.",kitchen,direct
+12047,"Suddenly, Let's walk into the main cooking area as soon as possible.",kitchen,direct
+19969,"By the way, I'll be cooking in our home kitchen to clear my head.",kitchen,direct
+18592,"Well, I think I'll check the modern kitchen space because that's what I need.",kitchen,direct
+15354,"Suddenly, Let's walk into the modern kitchen space before it gets too late.",kitchen,direct
+17545,"Honestly, I think I'll check the culinary area to feel better.",kitchen,direct
+10786,"Hey, I need to go to the culinary area to feel better.",kitchen,direct
+14887,"Look, I am stepping into our home kitchen for a change.",kitchen,direct
+14858,"Well, I'm heading to our home kitchen right away.",kitchen,direct
+17537,I guess Take me straight to the dining and kitchen room because I feel like it.,kitchen,direct
+15902,I guess I'm heading to the dining and kitchen room immediately.,kitchen,direct
+16645,"By the way, I need to go to the modern kitchen space since I have nothing else to do.",kitchen,direct
+13252,"Honestly, I need to go to the modern kitchen space because I feel like it.",kitchen,direct
+16964,I guess Can you guide me to the modern kitchen space? because that's what I need.,kitchen,direct
+10148,"Just so you know, I'm heading to our home kitchen without waiting.",kitchen,direct
+18591,I'll be cooking in the kitchen zone for a change.,kitchen,direct
+19098,"By the way, Let's walk into the main cooking area before it gets too late.",kitchen,direct
+11450,"As planned, Can you guide me to the modern kitchen space? without waiting.",kitchen,direct
+18601,"Unbelievably, I'll be cooking in the kitchen to clear my head.",kitchen,direct
+16737,"First of all, I'm heading to the kitchen zone as soon as possible.",kitchen,direct
+19465,"Surprisingly, Let's clean up the culinary area for a change.",kitchen,direct
+13457,"Tonight, Let's clean up our home kitchen.",kitchen,direct
+19695,"Well, I think I'll check the modern kitchen space without waiting.",kitchen,direct
+18093,"If possible, Show me where the kitchen is for a moment.",kitchen,direct
+14351,"Without a doubt, Show me where the kitchen zone is since I have nothing else to do.",kitchen,direct
+11409,"Lately, Let's clean up our home kitchen before going out.",kitchen,direct
+13766,"For some reason, Let's check the lights in the modern kitchen space without waiting.",kitchen,direct
+15511,Maybe I think I'll check our home kitchen for a moment.,kitchen,direct
+12020,"Without a doubt, Can we move towards the dining and kitchen room? to clear my head.",kitchen,direct
+15736,"Surprisingly, Can you guide me to our home kitchen? because I feel like it.",kitchen,direct
+10038,"Since I'm tired, I'm heading to the kitchen like, right now.",kitchen,direct
+19118,"Just so you know, Can you guide me to our home kitchen?",kitchen,direct
+19077,"Actually, Show me where our home kitchen is for a change.",kitchen,direct
+13418,"Without a doubt, Can we move towards the kitchen zone? right away.",kitchen,direct
+16325,"Tonight, I think I'll check the kitchen like, right now.",kitchen,direct
+19604,"Lately, Let's check the lights in the kitchen zone for a change.",kitchen,direct
+12286,"Actually, I'll be cooking in the culinary area for a change.",kitchen,direct
+16430,"This weekend, I am stepping into the main cooking area for real.",kitchen,direct
+11354,"Since I'm tired, I am stepping into the kitchen for a change.",kitchen,direct
+17891,"Well, I think I'll check the kitchen zone for a change.",kitchen,direct
+13831,"After a long day, Show me where the dining and kitchen room is to feel better.",kitchen,direct
+18071,"Just so you know, I'll be cooking in the culinary area because that's what I need.",kitchen,direct
+17703,Take me straight to the culinary area to spend some time.,kitchen,direct
+12559,"Since I'm tired, I need to go to the dining and kitchen room for real.",kitchen,direct
+14742,"If possible, Let's clean up the main cooking area.",kitchen,direct
+19616,I think I think I'll check the culinary area to feel better.,kitchen,direct
+11998,"For some reason, Can you check the temperature of the gas stove? since I have nothing else to do.",kitchen,indirect
+16565,"Since I'm tired, I should wash the kitchen sink for a moment.",kitchen,indirect
+19326,"Since I'm bored, Let's clean up the water purifier to spend some time.",kitchen,indirect
+16434,"By the way, Let's clean up the dishwasher before it gets too late.",kitchen,indirect
+10005,"Basically, Let's sit on the bar stools before going out.",kitchen,indirect
+17280,"After a long day, I need to open the baking oven to spend some time.",kitchen,indirect
+13992,"Lately, I am looking at the marble countertop like, right now.",kitchen,indirect
+15958,"After a long day, I should wash the dishwasher for a change.",kitchen,indirect
+10230,"First of all, I'm going to put this inside the microwave if you can.",kitchen,indirect
+11347,"Basically, I should wash the frying pan on the counter to feel better.",kitchen,indirect
+14458,"Right now, I need to open the marble countertop since I have nothing else to do.",kitchen,indirect
+19986,"For some reason, I should wash the upper cabinet because that's what I need.",kitchen,indirect
+19642,"After a long day, Let's clean up the microwave for a moment.",kitchen,indirect
+13806,"Since I'm bored, I will wipe the water purifier to feel better.",kitchen,indirect
+12941,I guess I'm going to put this inside the dishwasher if you can.,kitchen,indirect
+10725,"This weekend, Let's gather around the baking oven to feel better.",kitchen,indirect
+12955,"Surprisingly, I'm standing right by the dishwasher.",kitchen,indirect
+16921,"Basically, I'm going to put this inside the dishwasher as soon as possible.",kitchen,indirect
+10970,"Actually, I'm going to put this inside the microwave immediately.",kitchen,indirect
+11036,"This weekend, Can you turn on the frying pan on the counter? without waiting.",kitchen,indirect
+18794,"First of all, Something is sitting on the refrigerator.",kitchen,indirect
+15919,"Since I'm tired, Let's clean up the marble countertop for a change.",kitchen,indirect
+19772,"Just so you know, Let's clean up the gas stove immediately.",kitchen,indirect
+10854,"Right now, I need to open the marble countertop without waiting.",kitchen,indirect
+19119,"Surprisingly, Can you turn on the microwave? before going out.",kitchen,indirect
+16474,"Lately, I'm standing right by the refrigerator immediately.",kitchen,indirect
+19180,"For some reason, I will wipe the water purifier to clear my head.",kitchen,indirect
+11509,"Look, Let's gather around the water purifier right away.",kitchen,indirect
+11554,"Basically, Can you check the temperature of the refrigerator? to feel better.",kitchen,indirect
+17960,"Honestly, Let's sit on the kitchen sink before going out.",kitchen,indirect
+15796,"This weekend, Can you turn on the kitchen sink? before going out.",kitchen,indirect
+16715,"Hey, Something is sitting on the kitchen island before going out.",kitchen,indirect
+12044,"Right now, I will wipe the lower kitchen cabinets for real.",kitchen,indirect
+13234,Maybe Let's gather around the baking oven because I feel like it.,kitchen,indirect
+16411,"Without a doubt, Something is sitting on the upper cabinet without waiting.",kitchen,indirect
+17352,"Actually, Something is sitting on the kitchen sink for real.",kitchen,indirect
+15112,I think Can you check the temperature of the upper cabinet? for real.,kitchen,indirect
+12621,"As planned, Let's clean up the baking oven without waiting.",kitchen,indirect
+16560,I guess Something is sitting on the microwave before it gets too late.,kitchen,indirect
+19051,"If you don't mind, I will wipe the microwave as soon as possible.",kitchen,indirect
+18775,"Look, Let's gather around the gas stove for a moment.",kitchen,indirect
+18306,"Hey, I'm going to put this inside the gas stove to feel better.",kitchen,indirect
+12484,"Look, Can you turn on the bar stools? right away.",kitchen,indirect
+18571,"For some reason, I will wipe the kitchen sink since I have nothing else to do.",kitchen,indirect
+13863,"Since I'm bored, Can you check the temperature of the water purifier? because that's what I need.",kitchen,indirect
+14841,"Without a doubt, I need to open the frying pan on the counter for real.",kitchen,indirect
+18109,"First of all, I need to open the marble countertop if you can.",kitchen,indirect
+17863,"Unbelievably, I am looking at the microwave as soon as possible.",kitchen,indirect
+14584,"Right now, Let's gather around the lower kitchen cabinets.",kitchen,indirect
+15337,"Hey, Let's gather around the lower kitchen cabinets before it gets too late.",kitchen,indirect
+16257,"Look, I want to check out the meal preparation spot as soon as possible.",kitchen,ambiguous
+15425,"Lately, I am heading to where we store all the snacks for a change.",kitchen,ambiguous
+11466,"Look, Take me to the place that smells like delicious food.",kitchen,ambiguous
+12930,I think I need to stay in the place that smells like delicious food if you can.,kitchen,ambiguous
+12642,"Unbelievably, Take me to the place that smells like delicious food to feel better.",kitchen,ambiguous
+10784,"As planned, I want to check out where the dishes are washed like, right now.",kitchen,ambiguous
+13998,"Just so you know, Let's go to the place that smells like delicious food for real.",kitchen,ambiguous
+10241,"Basically, I'm curious about what's in the room with all the cooking appliances like, right now.",kitchen,ambiguous
+17126,"For some reason, Can you guide me to the room where I can grab a drink? because I feel like it.",kitchen,ambiguous
+16699,"Well, Can you guide me to the area near the food storage? since I have nothing else to do.",kitchen,ambiguous
+12687,"Look, I want to check out where we store all the snacks to spend some time.",kitchen,ambiguous
+17129,"Actually, I am heading to the meal preparation spot for a change.",kitchen,ambiguous
+12594,"If possible, Let's meet in the room with all the cooking appliances for a moment.",kitchen,ambiguous
+10087,"Actually, Let's meet in the room where I can grab a drink to clear my head.",kitchen,ambiguous
+10858,"As planned, Take me to the room where I can grab a drink for a moment.",kitchen,ambiguous
+18675,"Honestly, Take me to the meal preparation spot before it gets too late.",kitchen,ambiguous
+17647,"Right now, Can you guide me to the area near the food storage? before going out.",kitchen,ambiguous
+10711,I think Take me to where we store all the snacks immediately.,kitchen,ambiguous
+12672,"As planned, I am heading to where we store all the snacks without waiting.",kitchen,ambiguous
+10825,"Suddenly, I'm curious about what's in the room with all the cooking appliances for real.",kitchen,ambiguous
+10363,"Honestly, Let's go to the space where we make breakfast because that's what I need.",kitchen,ambiguous
+13884,"Just so you know, I am heading to where the dishes are washed for a moment.",kitchen,ambiguous
+16217,"Lately, I'm curious about what's in where the dishes are washed if you can.",kitchen,ambiguous
+12798,"If possible, Can you guide me to the room with all the cooking appliances? as soon as possible.",kitchen,ambiguous
+13274,"Lately, I'm curious about what's in the room with all the cooking appliances to spend some time.",kitchen,ambiguous
+18155,"Well, I am walking towards where the dishes are washed as soon as possible.",kitchen,ambiguous
+15867,"Surprisingly, Take me to where we store all the snacks because I feel like it.",kitchen,ambiguous
+12505,"Actually, I am walking towards where the dishes are washed since I have nothing else to do.",kitchen,ambiguous
+16533,"If possible, I think I need to stay in the room with all the cooking appliances for a moment.",kitchen,ambiguous
+11581,"Actually, Let's go to where the dishes are washed.",kitchen,ambiguous
+18877,I think Let's go to the room with all the cooking appliances without waiting.,kitchen,ambiguous
+16906,"Look, I want to check out the space where we make breakfast because I feel like it.",kitchen,ambiguous
+16974,"Since I'm bored, Can you guide me to where the dishes are washed? before going out.",kitchen,ambiguous
+15694,"Right now, Take me to the place that smells like delicious food for a change.",kitchen,ambiguous
+12856,"Lately, Take me to the room with all the cooking appliances since I have nothing else to do.",kitchen,ambiguous
+19664,"Look, Let's meet in the space where we make breakfast without waiting.",kitchen,ambiguous
+15699,"Well, I'm curious about what's in where the dishes are washed as soon as possible.",kitchen,ambiguous
+19920,"For some reason, Let's meet in where we store all the snacks immediately.",kitchen,ambiguous
+14922,"Since I'm tired, I think I need to stay in the area near the food storage like, right now.",kitchen,ambiguous
+12215,Maybe Let's go to the place that smells like delicious food immediately.,kitchen,ambiguous
+11160,"As planned, Let's meet in the space where we make breakfast to feel better.",kitchen,ambiguous
+11191,"For some reason, Let's go to the place that smells like delicious food.",kitchen,ambiguous
+18027,"Without a doubt, Let's go to the meal preparation spot because I feel like it.",kitchen,ambiguous
+15211,I'm curious about what's in the area near the food storage immediately.,kitchen,ambiguous
+14184,"Without a doubt, I want to check out the place that smells like delicious food for a change.",kitchen,ambiguous
+15147,"Well, Let's go to the room with all the cooking appliances to clear my head.",kitchen,ambiguous
+14957,Maybe I think I need to stay in the area near the food storage for real.,kitchen,ambiguous
+15613,"Surprisingly, I'm curious about what's in the meal preparation spot right away.",kitchen,ambiguous
+18954,"Actually, I am walking towards the room where I can grab a drink before it gets too late.",kitchen,ambiguous
+10642,"If possible, Let's go to the room with all the cooking appliances immediately.",kitchen,ambiguous
+28222,"If you don't mind, Please guide me to my own bedroom space since I have nothing else to do.",bedroom,direct
+28016,"Unbelievably, Show me where the quiet bedroom area is right away.",bedroom,direct
+27918,"First of all, I am going inside the main sleeping room to clear my head.",bedroom,direct
+21148,"Right now, Let's head to my own bedroom space as soon as possible.",bedroom,direct
+20720,"If possible, Please guide me to my own bedroom space like, right now.",bedroom,direct
+24916,"Since I'm bored, Can you take me to the main sleeping room? without waiting.",bedroom,direct
+28907,"If possible, Please guide me to my private bedroom to spend some time.",bedroom,direct
+24126,"Just so you know, I am going inside the master bedroom.",bedroom,direct
+29803,"Without a doubt, Let's head to the master bedroom without waiting.",bedroom,direct
+21273,"Unbelievably, I want to enter the back bedroom for a moment.",bedroom,direct
+22983,"Right now, Let's check the main sleeping room to spend some time.",bedroom,direct
+22324,"Well, Can you take me to the bedroom? because I feel like it.",bedroom,direct
+22308,"Surprisingly, Let's check the master bedroom for a moment.",bedroom,direct
+26475,"If you don't mind, I'm going to sleep in the main sleeping room to spend some time.",bedroom,direct
+25431,I think Let's check my own bedroom space since I have nothing else to do.,bedroom,direct
+21674,Can you take me to the quiet bedroom area? for a change.,bedroom,direct
+25155,"If possible, Let's head to the back bedroom immediately.",bedroom,direct
+22218,"By the way, I'm going to sleep in my own bedroom space as soon as possible.",bedroom,direct
+23357,"Well, I need to relax in the bedroom right away.",bedroom,direct
+25588,"This weekend, Can you turn off the lights in my own bedroom space? for a change.",bedroom,direct
+23002,"Since I'm bored, Can you take me to the master bedroom? for real.",bedroom,direct
+20894,"Surprisingly, Show me where the main sleeping room is without waiting.",bedroom,direct
+25371,Please guide me to the bedroom immediately.,bedroom,direct
+29887,"By the way, Can you turn off the lights in the back bedroom? as soon as possible.",bedroom,direct
+26667,"For some reason, Can you turn off the lights in my private bedroom? to spend some time.",bedroom,direct
+21146,"Look, Let's head to the back bedroom since I have nothing else to do.",bedroom,direct
+20604,"After a long day, Can you take me to the bedroom? to clear my head.",bedroom,direct
+27996,"Lately, Let's head to the master bedroom like, right now.",bedroom,direct
+26526,"Hey, Please guide me to the back bedroom immediately.",bedroom,direct
+20196,"Honestly, I am going inside the bedroom for a change.",bedroom,direct
+21082,Maybe I'm walking towards the master bedroom as soon as possible.,bedroom,direct
+29234,"Tonight, I am going inside the master bedroom if you can.",bedroom,direct
+22846,"Since I'm tired, I'll be staying in the quiet bedroom area for a moment.",bedroom,direct
+22004,"First of all, I'm walking towards the main sleeping room for a change.",bedroom,direct
+24963,I think I need to relax in my own bedroom space if you can.,bedroom,direct
+25856,"Lately, Show me where the master bedroom is for real.",bedroom,direct
+25798,"Just so you know, Show me where the back bedroom is for a moment.",bedroom,direct
+22599,"Lately, Show me where the quiet bedroom area is like, right now.",bedroom,direct
+24899,I think Please guide me to the master bedroom if you can.,bedroom,direct
+20676,I guess I am going inside the master bedroom right away.,bedroom,direct
+21984,"Honestly, Show me where the back bedroom is without waiting.",bedroom,direct
+24623,"Surprisingly, Show me where the back bedroom is to spend some time.",bedroom,direct
+20028,I think Let's head to my private bedroom because that's what I need.,bedroom,direct
+24766,"Hey, Can you turn off the lights in my own bedroom space? because that's what I need.",bedroom,direct
+23193,"If you don't mind, I'm walking towards the quiet bedroom area.",bedroom,direct
+29609,"If you don't mind, Let's check the master bedroom as soon as possible.",bedroom,direct
+29620,"After a long day, Please guide me to my private bedroom to feel better.",bedroom,direct
+25499,"This weekend, I want to enter my private bedroom to clear my head.",bedroom,direct
+23445,"Since I'm bored, Let's check my own bedroom space to feel better.",bedroom,direct
+25164,"Just so you know, I need to relax in the quiet bedroom area because I feel like it.",bedroom,direct
+28572,"Hey, Can you turn off the small nightstand? without waiting.",bedroom,indirect
+28958,"Surprisingly, Can you close the main closet? for a moment.",bedroom,indirect
+29605,Let's open the window blinds without waiting.,bedroom,indirect
+26940,"If you don't mind, I'm changing my clothes near the soft pillow to clear my head.",bedroom,indirect
+28165,"Since I'm tired, Can you close the blackout curtains? because I feel like it.",bedroom,indirect
+28808,"Tonight, Let's open the blackout curtains for a change.",bedroom,indirect
+26058,"Since I'm tired, I'll sit right by the warm blanket.",bedroom,indirect
+22002,"Look, Can you adjust the soft pillow? to spend some time.",bedroom,indirect
+22463,"Unbelievably, Let's open the window blinds to spend some time.",bedroom,indirect
+23862,"If possible, I'm looking for my clothes in the clothing dresser like, right now.",bedroom,indirect
+22843,"Hey, I want to lie down on the main closet like, right now.",bedroom,indirect
+20759,"Actually, Can you turn off the bedside lamp? like, right now.",bedroom,indirect
+27204,"Basically, I am standing in front of the small nightstand since I have nothing else to do.",bedroom,indirect
+29020,"After a long day, I'm going to rest my head near the window blinds for a change.",bedroom,indirect
+26763,"Honestly, Can you adjust the clothing dresser? as soon as possible.",bedroom,indirect
+20782,"Suddenly, I need to fix the cozy bedroom rug because I feel like it.",bedroom,indirect
+29154,"For some reason, Let's open the main closet for a moment.",bedroom,indirect
+24071,"Actually, I want to lie down on the window blinds if you can.",bedroom,indirect
+20746,"Just so you know, I'm looking for my clothes in the full-length mirror if you can.",bedroom,indirect
+20675,"Surprisingly, I'm looking for my clothes in the small nightstand to clear my head.",bedroom,indirect
+27245,"Honestly, I'm looking for my clothes in the soft pillow without waiting.",bedroom,indirect
+25953,"Since I'm bored, I'm looking for my clothes in the clothing dresser like, right now.",bedroom,indirect
+26270,Can you adjust the cozy bedroom rug? as soon as possible.,bedroom,indirect
+26623,"Well, I need to fix the bed with the wooden headboard because I feel like it.",bedroom,indirect
+22025,"Since I'm bored, I am standing in front of the small nightstand since I have nothing else to do.",bedroom,indirect
+20741,"Tonight, Can you turn off the window blinds? to feel better.",bedroom,indirect
+26315,I'll sit right by the bedside lamp for real.,bedroom,indirect
+21066,"Suddenly, Can you turn off the window blinds? to clear my head.",bedroom,indirect
+22412,"Actually, I'm changing my clothes near the full-length mirror for a moment.",bedroom,indirect
+20883,Maybe I'm changing my clothes near the small nightstand immediately.,bedroom,indirect
+27357,"By the way, I'm going to rest my head near the cozy bedroom rug because I feel like it.",bedroom,indirect
+20880,"Right now, Let's open the main closet because I feel like it.",bedroom,indirect
+28322,"Surprisingly, I am standing in front of the main closet to clear my head.",bedroom,indirect
+23062,"Hey, Can you turn off the bed with the wooden headboard? immediately.",bedroom,indirect
+25056,"Without a doubt, I'm going to rest my head near the bedside lamp.",bedroom,indirect
+21583,"Tonight, Can you close the blackout curtains? for a change.",bedroom,indirect
+27093,"If you don't mind, I'm changing my clothes near the bedside lamp.",bedroom,indirect
+23216,"Suddenly, I'm going to rest my head near the bedside lamp before it gets too late.",bedroom,indirect
+27203,"Unbelievably, Can you turn off the cozy bedroom rug? because that's what I need.",bedroom,indirect
+27355,"Well, Let's open the cozy bedroom rug before it gets too late.",bedroom,indirect
+20527,"First of all, Can you close the full-length mirror? to clear my head.",bedroom,indirect
+27648,"Since I'm bored, I want to lie down on the blackout curtains because that's what I need.",bedroom,indirect
+21086,"Right now, I am standing in front of the warm blanket to feel better.",bedroom,indirect
+25278,Maybe I want to crawl under the cozy bedroom rug as soon as possible.,bedroom,indirect
+28088,"First of all, I'm changing my clothes near the soft pillow to feel better.",bedroom,indirect
+27242,"Hey, I'll sit right by the full-length mirror to feel better.",bedroom,indirect
+27048,"Surprisingly, I'll sit right by the warm blanket because I feel like it.",bedroom,indirect
+26493,"Suddenly, I want to lie down on the full-length mirror before it gets too late.",bedroom,indirect
+24095,"Hey, I'm changing my clothes near the full-length mirror immediately.",bedroom,indirect
+23413,"After a long day, Can you close the full-length mirror? as soon as possible.",bedroom,indirect
+22402,I am heading to the most private area upstairs to spend some time.,bedroom,ambiguous
+28249,"Tonight, Can you show me the room for a perfect night's sleep? without waiting.",bedroom,ambiguous
+28867,I guess I will be sleeping in the most private area upstairs before going out.,bedroom,ambiguous
+23697,"If you don't mind, Let's go to the room for a perfect night's sleep for real.",bedroom,ambiguous
+22824,"If you don't mind, I will be sleeping in the dark and cozy sleeping spot right away.",bedroom,ambiguous
+23153,"If you don't mind, I am heading to the quietest room in the house immediately.",bedroom,ambiguous
+24756,"Without a doubt, Take me to the space where I can completely shut down for real.",bedroom,ambiguous
+21558,"This weekend, Let's go to the quietest room in the house for a change.",bedroom,ambiguous
+28273,Maybe I will be sleeping in where the pillows and blankets are as soon as possible.,bedroom,ambiguous
+27940,I think Let's move toward my personal relaxation zone since I have nothing else to do.,bedroom,ambiguous
+23534,"This weekend, Can you show me the dark and cozy sleeping spot? for real.",bedroom,ambiguous
+25585,"Unbelievably, I feel like staying in the quietest room in the house for a change.",bedroom,ambiguous
+23721,I guess I am heading to the most private area upstairs since I have nothing else to do.,bedroom,ambiguous
+29299,"This weekend, I feel like staying in the place where I end my day right away.",bedroom,ambiguous
+20878,"Tonight, Can you show me where the pillows and blankets are? before it gets too late.",bedroom,ambiguous
+20087,"Surprisingly, I am heading to the quietest room in the house because that's what I need.",bedroom,ambiguous
+25602,"As planned, Take me to the most private area upstairs immediately.",bedroom,ambiguous
+27625,Take me to my personal relaxation zone right away.,bedroom,ambiguous
+26916,I guess I will be sleeping in the dark and cozy sleeping spot for a moment.,bedroom,ambiguous
+21200,"Lately, Take me to my personal relaxation zone if you can.",bedroom,ambiguous
+20888,"Honestly, Let's move toward the most private area upstairs to clear my head.",bedroom,ambiguous
+26626,"Tonight, Let's go to the quietest room in the house.",bedroom,ambiguous
+22493,"After a long day, Let's move toward the space where I can completely shut down to spend some time.",bedroom,ambiguous
+26259,"Actually, I feel like staying in where the pillows and blankets are before going out.",bedroom,ambiguous
+23152,"If you don't mind, I need to spend some time in the place where I end my day for a moment.",bedroom,ambiguous
+21579,"Honestly, I want to hide in where the pillows and blankets are because I feel like it.",bedroom,ambiguous
+24122,"Suddenly, Let's go to where the pillows and blankets are because that's what I need.",bedroom,ambiguous
+20842,"This weekend, Let's move toward the quietest room in the house for a change.",bedroom,ambiguous
+22891,I will be sleeping in my personal relaxation zone immediately.,bedroom,ambiguous
+24395,"Honestly, I will be sleeping in where the pillows and blankets are without waiting.",bedroom,ambiguous
+23371,"Lately, Let's move toward my personal relaxation zone for real.",bedroom,ambiguous
+21863,"Right now, I am heading to the dark and cozy sleeping spot before it gets too late.",bedroom,ambiguous
+25327,"Since I'm tired, Take me to my personal relaxation zone before going out.",bedroom,ambiguous
+26689,I want to hide in the space where I can completely shut down without waiting.,bedroom,ambiguous
+28716,I guess I feel like staying in the space where I can completely shut down without waiting.,bedroom,ambiguous
+23555,"Tonight, I need to spend some time in the place where I end my day immediately.",bedroom,ambiguous
+27528,"Well, Can you show me the space where I can completely shut down? for a moment.",bedroom,ambiguous
+29950,"Since I'm tired, Take me to the most private area upstairs if you can.",bedroom,ambiguous
+28061,I guess Let's go to the room for a perfect night's sleep to clear my head.,bedroom,ambiguous
+26536,"After a long day, Can you show me the space where I can completely shut down? if you can.",bedroom,ambiguous
+20077,"Basically, Let's go to the place where I end my day immediately.",bedroom,ambiguous
+28231,I want to hide in the quietest room in the house to spend some time.,bedroom,ambiguous
+26813,"Unbelievably, Take me to the quietest room in the house to spend some time.",bedroom,ambiguous
+23531,"If you don't mind, I feel like staying in the dark and cozy sleeping spot immediately.",bedroom,ambiguous
+28159,Maybe I will be sleeping in the most private area upstairs for a moment.,bedroom,ambiguous
+21250,"Basically, I want to hide in the room for a perfect night's sleep to feel better.",bedroom,ambiguous
+21597,"Hey, I need to spend some time in the dark and cozy sleeping spot for a moment.",bedroom,ambiguous
+23148,"First of all, Let's go to where the pillows and blankets are because I feel like it.",bedroom,ambiguous
+21370,"Since I'm bored, Let's move toward the place where I end my day since I have nothing else to do.",bedroom,ambiguous
+21279,I guess Take me to where the pillows and blankets are immediately.,bedroom,ambiguous
+38990,Maybe Bring me near the bathroom door right now.,bathroom,direct
+36628,"Actually, Could we head to the bathroom.",bathroom,direct
+31786,Can you direct me to the restroom.,bathroom,direct
+33151,I need to go to the bathroom right now.,bathroom,direct
+33279,"Actually, Please guide me to the bathroom right now.",bathroom,direct
+37266,Maybe Take me straight to the bathroom for a moment.,bathroom,direct
+32424,Maybe Please navigate to the bathroom right now.,bathroom,direct
+38709,I am looking for the restroom.,bathroom,direct
+34029,Could you bring me to the restroom before we continue.,bathroom,direct
+32312,Take me over to the restroom please.,bathroom,direct
+38344,"For a moment, Can you show me the bathroom.",bathroom,direct
+37654,"Actually, Let's move toward the bathroom.",bathroom,direct
+33072,"Actually, Take me over to the restroom please.",bathroom,direct
+36055,Please guide me to the bathroom please.,bathroom,direct
+35904,Please take me to the restroom please.,bathroom,direct
+32905,Guide me toward the restroom right now.,bathroom,direct
+30554,I need to be in the bathroom.,bathroom,direct
+31044,Maybe Please lead me to the bathroom before we continue.,bathroom,direct
+37659,Maybe Please navigate to the bathroom please.,bathroom,direct
+34985,"Actually, I am looking for the restroom before we continue.",bathroom,direct
+33205,"Right now, Take me straight to the bathroom.",bathroom,direct
+30471,"Right now, Can you show me the bathroom if possible.",bathroom,direct
+30055,"Right now, Please help me find the restroom.",bathroom,direct
+33899,Maybe Let's stop by the restroom.,bathroom,direct
+39368,Let's head to the bathroom.,bathroom,direct
+31508,"Right now, Let's stop by the restroom.",bathroom,direct
+37687,"For a moment, Where is the bathroom please.",bathroom,direct
+33054,"For a moment, Take me over to the restroom please.",bathroom,direct
+31856,"For a moment, I want to go to the restroom right now.",bathroom,direct
+38981,Please point me to the bathroom.,bathroom,direct
+35272,I think Can you help me reach the bathroom.,bathroom,direct
+36613,"Actually, I want to enter the bathroom.",bathroom,direct
+38558,I think Let's head to the bathroom if possible.,bathroom,direct
+35047,"Right now, Can we go to the bathroom now for a moment.",bathroom,direct
+36745,I think Let's stop by the restroom please.,bathroom,direct
+30124,"Actually, Take me to the bathroom before we continue.",bathroom,direct
+31296,Please take me to the restroom.,bathroom,direct
+30848,"Actually, Could you bring me to the restroom for a moment.",bathroom,direct
+38384,Move to the bathroom.,bathroom,direct
+31717,"Right now, Can you direct me to the restroom.",bathroom,direct
+36493,I think Move to the bathroom right now.,bathroom,direct
+30387,Can you direct me to the restroom please.,bathroom,direct
+34361,I would like to head into the restroom for a moment.,bathroom,direct
+37020,I think Move to the bathroom.,bathroom,direct
+36618,I think Can we go to the bathroom now right now.,bathroom,direct
+31708,"Right now, I need to get to the restroom.",bathroom,direct
+35086,I think Where is the bathroom.,bathroom,direct
+31468,"Actually, Please point me to the bathroom please.",bathroom,direct
+30434,Let's head to the bathroom please.,bathroom,direct
+33612,"Right now, Let's head to the bathroom if possible.",bathroom,direct
+34613,I want to comb my hair.,bathroom,indirect
+39881,I want to rinse my face.,bathroom,indirect
+30551,"For a moment, I should rinse off.",bathroom,indirect
+34513,"Actually, I need to wash my hands please.",bathroom,indirect
+32720,"Right now, I need to freshen up for a moment.",bathroom,indirect
+38486,I want to check myself in the mirror right now.,bathroom,indirect
+33246,"Right now, I need a private place to wash.",bathroom,indirect
+38308,"Right now, I should brush my teeth if possible.",bathroom,indirect
+31354,I should tidy my hair please.,bathroom,indirect
+34467,"For a moment, I want to rinse my face.",bathroom,indirect
+39664,"Right now, I should check my reflection.",bathroom,indirect
+36978,"Right now, I need to freshen up right now.",bathroom,indirect
+35142,I think I should clean up before leaving.,bathroom,indirect
+37752,Maybe I want to fix my hair before we continue.,bathroom,indirect
+39291,Maybe My hands are sticky please.,bathroom,indirect
+31974,"Actually, I need to wash away the dust.",bathroom,indirect
+33055,"For a moment, I need to shave if possible.",bathroom,indirect
+32070,Maybe I should clean up before leaving before we continue.,bathroom,indirect
+39920,I need a sink for a second please.,bathroom,indirect
+32261,My appearance needs a quick check.,bathroom,indirect
+35219,I need to wash away the dust for a moment.,bathroom,indirect
+30330,"For a moment, I want to rinse my face right now.",bathroom,indirect
+32288,"For a moment, My appearance needs a quick check before we continue.",bathroom,indirect
+39162,"Right now, I want to rinse this off.",bathroom,indirect
+34202,I want to rinse this off if possible.,bathroom,indirect
+39690,Maybe I want to take a quick shower.,bathroom,indirect
+35213,"Actually, My face feels oily before we continue.",bathroom,indirect
+39939,"For a moment, I want to comb my hair please.",bathroom,indirect
+38338,I want to fix my makeup please.,bathroom,indirect
+39143,"For a moment, My hands smell like food.",bathroom,indirect
+33231,"Actually, I should clean my hands before we continue.",bathroom,indirect
+33426,I need to wash my hands for a moment.,bathroom,indirect
+32033,Maybe I want to check myself in the mirror.,bathroom,indirect
+39746,Maybe I need to wash away the dust please.,bathroom,indirect
+38705,Maybe I need to remove this dirt from my hands.,bathroom,indirect
+31414,"Actually, I should tidy my hair.",bathroom,indirect
+34839,"For a moment, I want to check myself in the mirror please.",bathroom,indirect
+30536,My fingers feel greasy right now.,bathroom,indirect
+35873,I think I want to fix my hair.,bathroom,indirect
+32868,My hands feel dirty.,bathroom,indirect
+32577,"Right now, I need to wash my hands for a moment.",bathroom,indirect
+35780,"For a moment, I need to clean up after eating if possible.",bathroom,indirect
+34420,Maybe I should brush my teeth.,bathroom,indirect
+33893,I think I should rinse off please.,bathroom,indirect
+39873,I want to splash some water on my face before we continue.,bathroom,indirect
+32937,"For a moment, I should clean up before leaving.",bathroom,indirect
+32886,My face feels oily if possible.,bathroom,indirect
+30310,I want to comb my hair if possible.,bathroom,indirect
+38222,"Actually, I want to check myself in the mirror if possible.",bathroom,indirect
+32466,I think I should check my reflection please.,bathroom,indirect
+34948,"Actually, I need to step away and reset please.",bathroom,ambiguous
+34089,Maybe I want to be more presentable if possible.,bathroom,ambiguous
+33463,"For a moment, I want to clean up a little.",bathroom,ambiguous
+30862,I think I need a moment for personal care before we continue.,bathroom,ambiguous
+39541,I need a short moment alone please.,bathroom,ambiguous
+33467,I should take a brief pause for a moment.,bathroom,ambiguous
+34366,"Actually, I need to get cleaned up.",bathroom,ambiguous
+37896,I think I need a minute to freshen up before we continue.,bathroom,ambiguous
+36332,I should take care of something first.,bathroom,ambiguous
+34967,I need a clean-up break.,bathroom,ambiguous
+38347,Maybe I want to be more presentable for a moment.,bathroom,ambiguous
+36635,I want to freshen my look right now.,bathroom,ambiguous
+34133,I think I should prepare myself first.,bathroom,ambiguous
+30361,"For a moment, I should prepare myself first if possible.",bathroom,ambiguous
+31438,I think I need to get cleaned up right now.,bathroom,ambiguous
+33224,"Actually, I want to feel cleaner if possible.",bathroom,ambiguous
+32299,I think I should take a brief pause.,bathroom,ambiguous
+37187,I think I should refresh before we continue if possible.,bathroom,ambiguous
+33274,"Right now, I need somewhere quiet for a minute if possible.",bathroom,ambiguous
+30494,"Right now, I should get myself ready.",bathroom,ambiguous
+31319,"Actually, I need a minute to freshen up.",bathroom,ambiguous
+37376,I need a moment for personal care for a moment.,bathroom,ambiguous
+35321,"Right now, I want to clean myself up right now.",bathroom,ambiguous
+34302,I want to be more presentable please.,bathroom,ambiguous
+38977,I think I need a short moment alone right now.,bathroom,ambiguous
+39706,"Actually, I need to make myself ready if possible.",bathroom,ambiguous
+33916,"For a moment, I should take care of my appearance for a moment.",bathroom,ambiguous
+35350,"For a moment, I want to refresh myself please.",bathroom,ambiguous
+37465,Maybe I need to take care of myself before we continue.,bathroom,ambiguous
+36357,I think I should handle a personal thing for a moment.,bathroom,ambiguous
+31444,I should refresh before we continue right now.,bathroom,ambiguous
+34793,Maybe I need a place to reset please.,bathroom,ambiguous
+37133,I should get myself together.,bathroom,ambiguous
+32412,I think I should get myself ready.,bathroom,ambiguous
+33180,"For a moment, I need somewhere quiet for a minute.",bathroom,ambiguous
+30557,"Right now, I need a place to reset before we continue.",bathroom,ambiguous
+38724,I need a moment for personal care right now.,bathroom,ambiguous
+35344,"Right now, I need to make myself ready.",bathroom,ambiguous
+30030,"Actually, I should take a personal pause please.",bathroom,ambiguous
+36448,I should take a personal pause.,bathroom,ambiguous
+39894,"Right now, I need a short moment alone.",bathroom,ambiguous
+36664,"For a moment, I should pause and reset for a moment.",bathroom,ambiguous
+38442,Maybe I want to sort myself out for a moment.,bathroom,ambiguous
+38876,I think I need a moment for personal care.,bathroom,ambiguous
+39128,I need to step away and reset for a moment.,bathroom,ambiguous
+39072,"For a moment, I need a place to reset if possible.",bathroom,ambiguous
+38236,"Right now, I want a moment to myself.",bathroom,ambiguous
+32505,Maybe I want to tidy up before we leave for a moment.,bathroom,ambiguous
+34521,I want a moment to myself before we continue.,bathroom,ambiguous
+35295,"Actually, I should take care of something first before we continue.",bathroom,ambiguous
