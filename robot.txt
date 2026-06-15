@@ -1,0 +1,28 @@
+#1) 가상환경
+cd /mnt/storage1/kap/robot
+python3 -m venv ithor_env
+source ithor_env/bin/activate
+
+#2) 패키지 설치
+pip install ai2thor
+pip install matplotlib
+pip install opencv-python
+pip install numpy
+pip install flask pillow
+
+#3) 이건 장소 직접 입력
+python robothor_object_nav.py
+
+#4)
+cd /mnt/storage1/kap/robot
+source ithor_env/bin/activate
+pip install torch transformers pandas scikit-learn tqdm'
+
+#5) 언어분류 BERT 학습
+cd /mnt/storage1/kap/robot
+deactivate  # ithor_env 켜져 있으면만. 안 켜져 있으면 에러 나도 괜찮음.
+python3 train_instruction_model.py
+
+#6) 이건 직접/간접 발화 기반으로 장소 추정후 이동
+cd /mnt/storage1/kap/robot
+python3 run_instruction_nav.py
