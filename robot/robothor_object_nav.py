@@ -1,5 +1,6 @@
 from flask import Flask, Response, render_template_string, request, jsonify
 from ai2thor.controller import Controller
+from ai2thor.platform import CloudRendering
 from collections import deque
 from PIL import Image
 import io
@@ -12,40 +13,116 @@ app = Flask(__name__)
 
 GRID = 0.10
 PORT = 5000
+HOUSE_SPLIT = "train"
+HOUSE_INDEX = None
+HOUSE_SEARCH_LIMIT = 200
+ROOM_NAV_LABELS = [
+    "kitchen",
+    "bathroom",
+    "bedroom",
+    "living_room",
+    "exercise_room",
+]
 
 ROTATE_DELAY = 0.5
 MOVE_DELAY = 0.2
 REFRESH_MS = 150
 
-PLACE_TO_OBJECTS = {
-    "kitchen": ["Mug", "Sink", "Fridge", "Microwave"],
-    "bathroom": ["Sink", "Toilet"],
-    "bedroom": ["Bed"],
-    "living_room": ["Sofa", "Television"],
+PLACE_TO_ROOMS = {
+    "kitchen": ["kitchen"],
+    "bathroom": ["bathroom"],
+    "bedroom": ["bedroom"],
+    "living_room": ["living_room", "livingroom"],
+    "exercise_room": ["exercise_room", "gym", "fitness_room"],
 }
 
+
+def normalize_label(label):
+    return label.strip().lower().replace(" ", "_").replace("-", "_")
+
+
+def normalize_room_type(room_type):
+    return normalize_label(room_type).replace("_", "")
+
+
+def score_house_for_places(house_json):
+    room_types = {
+        normalize_room_type(room.get("roomType", ""))
+        for room in house_json.get("rooms", [])
+    }
+
+    score = 0
+    for label in ROOM_NAV_LABELS:
+        aliases = PLACE_TO_ROOMS.get(label, [])
+
+        if any(normalize_room_type(alias) in room_types for alias in aliases):
+            score += 1
+
+    return score
+
+
+def load_procthor_house(split=HOUSE_SPLIT, index=HOUSE_INDEX):
+    try:
+        import prior
+    except ImportError as exc:
+        raise RuntimeError(
+            "ProcTHOR를 쓰려면 prior 패키지가 필요합니다. "
+            "먼저 `pip install prior procthor`를 실행해주세요."
+        ) from exc
+
+    dataset = prior.load_dataset("procthor-10k")
+
+    if index is not None:
+        return dataset[split][index], index
+
+    best_index = 0
+    best_house = dataset[split][0]
+    best_score = score_house_for_places(best_house)
+    search_limit = min(HOUSE_SEARCH_LIMIT, len(dataset[split]))
+
+    for candidate_index in range(1, search_limit):
+        candidate_house = dataset[split][candidate_index]
+        candidate_score = score_house_for_places(candidate_house)
+
+        if candidate_score > best_score:
+            best_index = candidate_index
+            best_house = candidate_house
+            best_score = candidate_score
+
+        if best_score == len(ROOM_NAV_LABELS):
+            break
+
+    return best_house, best_index
+
+
+house, house_index = load_procthor_house()
+
 controller = Controller(
-    scene="FloorPlan_Train1_1",
+    scene=house,
     agentMode="locobot",
     width=800,
     height=600,
     gridSize=GRID,
-    rotateStepDegrees=90
+    rotateStepDegrees=90,
+    platform=CloudRendering
 )
 
-#object 확인
-objects = controller.last_event.metadata["objects"] 
-object_types = sorted(set(obj["objectType"] for obj in objects)) 
-print(object_types)
+# room 확인
+room_types = sorted(set(room.get("roomType", "Unknown") for room in house["rooms"]))
+print("ProcTHOR house:", HOUSE_SPLIT, house_index, flush=True)
+print("room types:", room_types, flush=True)
 
 controller_lock = threading.RLock()
 
 nav_status = {
     "running": False,
     "message": "Ready",
+    "house": f"{HOUSE_SPLIT} {house_index}",
+    "room_types": room_types,
+    "supported_places": sorted(PLACE_TO_ROOMS.keys()),
     "step": 0,
     "target_place": None,
-    "target_object": None,
+    "target_room": None,
     "start": None,
     "goal": None,
     "path_length": None,
@@ -59,7 +136,7 @@ HTML = """
 <!doctype html>
 <html>
 <head>
-    <title>RoboTHOR Object Navigation</title>
+    <title>ProcTHOR Place Navigation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -87,7 +164,7 @@ HTML = """
     </style>
 </head>
 <body>
-    <h2>RoboTHOR Object Navigation</h2>
+    <h2>ProcTHOR Place Navigation</h2>
 
     <img id="view" src="/video_feed" width="800">
 
@@ -121,9 +198,12 @@ function refreshStatus() {
         document.getElementById("status").innerText =
             "running: " + data.running + "\\n" +
             "message: " + data.message + "\\n" +
+            "house: " + data.house + "\\n" +
+            "room_types: " + JSON.stringify(data.room_types) + "\\n" +
+            "supported_places: " + JSON.stringify(data.supported_places) + "\\n" +
             "step: " + data.step + "\\n" +
             "target_place: " + data.target_place + "\\n" +
-            "target_object: " + data.target_object + "\\n" +
+            "target_room: " + data.target_room + "\\n" +
             "start: " + JSON.stringify(data.start) + "\\n" +
             "goal: " + JSON.stringify(data.goal) + "\\n" +
             "path_length: " + data.path_length;
@@ -200,24 +280,83 @@ def get_reachable_positions():
     return [round_pos(p) for p in event.metadata["actionReturn"]]
 
 
-def find_existing_target_object(place_label):
-    candidates = PLACE_TO_OBJECTS.get(place_label)
 
-    if candidates is None:
-        return None
+def polygon_center(points):
+    xs = [p["x"] for p in points]
+    zs = [p["z"] for p in points]
+    return (round(sum(xs) / len(xs), 2), round(sum(zs) / len(zs), 2))
 
-    objects = get_last_event().metadata["objects"]
 
-    for target_type in candidates:
-        matched = [
-            obj for obj in objects
-            if obj["objectType"] == target_type
-        ]
+def point_in_polygon(point, polygon):
+    x, z = point
+    inside = False
+    j = len(polygon) - 1
 
-        if matched:
-            return matched[0]
+    for i in range(len(polygon)):
+        xi = polygon[i]["x"]
+        zi = polygon[i]["z"]
+        xj = polygon[j]["x"]
+        zj = polygon[j]["z"]
+
+        intersects = ((zi > z) != (zj > z)) and (
+            x < (xj - xi) * (z - zi) / ((zj - zi) or 1e-9) + xi
+        )
+
+        if intersects:
+            inside = not inside
+
+        j = i
+
+    return inside
+
+
+def find_target_room(place_label):
+    room_candidates = PLACE_TO_ROOMS.get(place_label, [])
+    wanted = {normalize_room_type(room) for room in room_candidates}
+
+    for room in house["rooms"]:
+        room_type = normalize_room_type(room.get("roomType", ""))
+
+        if room_type in wanted:
+            return room
 
     return None
+
+
+def nearest_reachable_position_to_point(point, reachable):
+    px, pz = point
+
+    return min(
+        reachable,
+        key=lambda p: (p[0] - px) ** 2 + (p[1] - pz) ** 2
+    )
+
+
+def nearest_reachable_position_in_room(room, reachable):
+    polygon = room["floorPolygon"]
+    center = polygon_center(polygon)
+    inside_room = [p for p in reachable if point_in_polygon(p, polygon)]
+
+    if inside_room:
+        return nearest_reachable_position_to_point(center, inside_room)
+
+    return nearest_reachable_position_to_point(center, reachable)
+
+
+def resolve_place_goal(place_label, reachable):
+    target_room = find_target_room(place_label)
+
+    if target_room is None:
+        return None
+
+    goal = nearest_reachable_position_in_room(target_room, reachable)
+
+    return {
+        "goal": goal,
+        "room": target_room,
+        "via": f"room {target_room.get('roomType', 'Unknown')}",
+    }
+
 
 def update_latest_frame(event):
     global latest_frame, frame_id
@@ -234,14 +373,6 @@ def update_latest_frame(event):
         latest_frame = jpeg.tobytes()
         frame_id += 1
         frame_condition.notify_all()
-
-def nearest_reachable_position(object_pos, reachable):
-    ox, oz = round_pos(object_pos)
-
-    return min(
-        reachable,
-        key=lambda p: (p[0] - ox) ** 2 + (p[1] - oz) ** 2
-    )
 
 
 def bfs(start, goal, reachable):
@@ -359,8 +490,10 @@ def go_to_place_worker(place_label):
     nav_status["running"] = True
     nav_status["message"] = "Planning"
     nav_status["step"] = 0
+    place_label = normalize_label(place_label)
+
     nav_status["target_place"] = place_label
-    nav_status["target_object"] = None
+    nav_status["target_room"] = None
     nav_status["start"] = None
     nav_status["goal"] = None
     nav_status["path_length"] = None
@@ -375,28 +508,26 @@ def go_to_place_worker(place_label):
         start = round_pos(event.metadata["agent"]["position"])
         reachable = get_reachable_positions()
 
-        target_object = find_existing_target_object(place_label)
+        target = resolve_place_goal(place_label, reachable)
 
-        if target_object is None:
-            msg = f"No target object found for place: {place_label}"
+        if target is None:
+            msg = f"No room found for place: {place_label}"
             nav_status["message"] = msg
             log(msg)
             nav_status["running"] = False
             return
 
-        goal = nearest_reachable_position(
-            target_object["position"],
-            reachable
-        )
-
+        goal = target["goal"]
+        target_room = target["room"]
         path = bfs(start, goal, reachable)
 
-        nav_status["target_object"] = target_object["objectType"]
+        nav_status["target_room"] = target_room.get("roomType", "Unknown")
+
         nav_status["start"] = start
         nav_status["goal"] = goal
         nav_status["path_length"] = len(path)
 
-        log(f"target object: {target_object['objectType']}")
+        log(f"target via: {target['via']}")
         log(f"start: {start}")
         log(f"goal: {goal}")
         log(f"path length: {len(path)}")
@@ -409,13 +540,11 @@ def go_to_place_worker(place_label):
             nav_status["running"] = False
             return
 
-        nav_status["message"] = (
-            f"Going to {place_label} via {target_object['objectType']}"
-        )
+        nav_status["message"] = f"Going to {place_label} via {target['via']}"
 
         follow_path(path)
 
-        msg = f"Arrived near: {target_object['objectType']}"
+        msg = f"Arrived at: {place_label} ({target['via']})"
         nav_status["message"] = msg
         log(msg)
         log("========== Navigation End ==========")
@@ -532,7 +661,7 @@ if __name__ == "__main__":
 
     while True:
         place = input(
-            "\nPlace label ex) kitchen, bathroom, bedroom, living_room: "
+            "\nPlace label ex) kitchen, bathroom, bedroom, living_room, exercise_room: "
         ).strip()
 
         if place.lower() in ["quit", "exit"]:
