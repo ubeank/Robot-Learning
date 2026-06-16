@@ -33,7 +33,10 @@ controller = Controller(
     rotateStepDegrees=90
 )
 
-objects = controller.last_event.metadata["objects"] object_types = sorted(set(obj["objectType"] for obj in objects)) print(object_types)
+#object 확인
+objects = controller.last_event.metadata["objects"] 
+object_types = sorted(set(obj["objectType"] for obj in objects)) 
+print(object_types)
 
 controller_lock = threading.RLock()
 
